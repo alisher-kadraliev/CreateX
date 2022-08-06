@@ -5,7 +5,7 @@
     margin: 0 auto;
     padding: 0 $containerSidePadding + px;
 
-    @media (max-width: $breakpoint1450) {
+    @media (max-width: $breakpoint1200) {
         max-width: 1200px;
     }
 
@@ -24,6 +24,7 @@
 
 // Body Locked
 body {
+    font-family: 'Ubuntu', sans-serif;
     &.locked {
         overflow: hidden;
     }
