@@ -1,0 +1,85 @@
+// Radio
+.radio__item {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+
+    .radio__input {
+        display: none;
+
+        &:checked+.fake::before {
+            opacity: 1;
+        }
+    }
+
+    .fake {
+        height: 15px;
+        width: 15px;
+        box-sizing: border-box;
+        border: 1px solid #8547C6;
+        border-radius: 50%;
+        display: block;
+        margin-right: 15px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            height: 9px;
+            width: 9px;
+            background: red;
+            top: 50%;
+            box-sizing: border-box;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            opacity: 0;
+            transition: .3s all ease;
+        }
+    }
+}
+
+// Checkbox
+.checkbox__item {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+
+    .checkbox__input {
+        display: none;
+
+        &:checked+.fake::before {
+            opacity: 1;
+        }
+    }
+
+    .fake {
+        height: 15px;
+        width: 15px;
+        box-sizing: border-box;
+        border: 1px solid #8547C6;
+        border-radius: 50%;
+        display: block;
+        margin-right: 15px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            height: 9px;
+            width: 9px;
+            background: #8547C6;
+            top: 50%;
+            box-sizing: border-box;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            opacity: 0;
+            transition: .3s all ease;
+        }
+    }
+}

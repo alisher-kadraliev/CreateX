@@ -1,0 +1,91 @@
+.accordion {
+    .accordion__item {
+        border-bottom: 1px solid#C4C4C4;
+
+        &.accordion__item-active {
+            .accordion__item-content {
+                display: block;
+            }
+
+            .line2 {
+                transform: translate(0) !important;
+                transition: .1s all ease;
+            }
+
+            .line1 {
+                opacity: 0;
+                transition: .1s all ease;
+
+            }
+        }
+
+
+        .accordion__item-trigger {
+            display: flex;
+            padding: 20px 0;
+            align-items: center;
+            cursor: pointer;
+
+            .trigger__num {
+                margin-right: 10px;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 22px;
+                letter-spacing: 0.035em;
+                color: #8547C6;
+            }
+
+            .trigger__text {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 22px;
+                letter-spacing: 0.035em;
+                color: #000000;
+                margin-left: 10px;
+            }
+
+            .trigger__img {
+                position: relative;
+                margin-left: auto;
+
+                .line1 {
+                    display: block;
+                    width: 18px;
+                    height: 2px;
+                    background: black;
+                    border-radius: 100px;
+                }
+
+                .line2 {
+                    display: block;
+                    width: 18px;
+                    height: 2px;
+                    background: black;
+                    margin-top: -2px;
+                    border-radius: 100px;
+                    transform: rotate(90deg);
+                }
+            }
+        }
+
+        .accordion__item-content {
+            padding-bottom: 20px;
+            display: none;
+            animation: fade .3s ease;
+
+            .content__text {
+                margin-top: 25px;
+                padding-left: 35px;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+
+
+    }
+
+}

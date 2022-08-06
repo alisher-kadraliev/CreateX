@@ -1,0 +1,109 @@
+.steps {
+    // .steps__form
+    &__form {
+        height: 500px;
+        width: 500px;
+        border: 1px solid grey;
+        padding: 15px;
+    }
+}
+
+// Прогресс-бар формы
+.progress {
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    transition: 0.3s all ease;
+    background: gray;
+
+    // .progress__success
+    &__success {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 2px;
+        background: blueviolet;
+    }
+}
+
+// Шапка формы с шагами
+// .steps__numbers
+.steps__numbers {
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    position: relative;
+
+    .step {
+        // .step__number
+        &__number {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s all ease;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            font-size: 24px;
+            background: gray;
+
+            &.active__number {
+                transition: 0.3s all ease;
+                color: white;
+                background: blueviolet;
+            }
+        }
+    }
+}
+
+// Слайды формы
+.form {
+    // .form__step
+    &__step {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+}
+
+// Кнопки навигации формы
+// .step__buttons
+.step__buttons {
+    display: flex;
+    gap: 50px;
+    margin-top: 25px;
+
+    // .button
+    .button {
+        padding: 10px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background: blueviolet;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        transition: 0.3s all ease;
+        width: 100%;
+        &:disabled {
+            background: gray;
+        }
+    }
+
+    .prev {
+        // .prev__step
+        &__step {
+        }
+    }
+    .next {
+        // .next__step
+        &__step {
+        }
+    }
+}

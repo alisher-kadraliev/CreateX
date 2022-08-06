@@ -1,0 +1,45 @@
+// ************************ Модальное окно ************************ //
+// mf
+.modal__wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    display: none;
+
+    .modal {
+        background: white;
+        padding: 25px;
+        border-radius: 5px;
+        height: 350px;
+        width: 300px;
+
+        &__title {
+            text-align: center;
+        }
+
+        &__close {
+            cursor: pointer;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
+
+// ************************ Кнопка вызова модального окна ************************ //
+.modal__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 30px;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+}
