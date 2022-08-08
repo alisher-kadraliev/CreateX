@@ -1,11 +1,10 @@
 .hero-img {
     background-image: url(../img/hero.jpg);
-    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
     // .hero__img
-
-
+    background-size: cover;
+    background-position: center;
+    height: 998px;
 }
 
 .section {
@@ -15,22 +14,19 @@
     &__hero {}
 }
 
-.swiper {
 
+
+
+.num {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+    width: 178px;
+    background: none;
+    border-bottom: 2px solid #FFFFFF;
+    color: #FFFFFF;
 }
-
-.swiper-wrapper {padding-top: 220px;
-    padding-bottom: 120px;}
-
-.swiper-slide {}
-
-.swiper-pagination {}
-
-.swiper-button-prev {}
-
-.swiper-button-next {}
-
-.swiper-scrollbar {}
 
 .hero {
 
@@ -68,6 +64,7 @@
 
     &__text {
         font-style: normal;
+        max-width: 595px;
         font-weight: 400;
         font-size: 20px;
         line-height: 150%;
@@ -81,10 +78,49 @@
     }
 }
 
-.buttons {display: flex;gap: 24px;}
+.buttons {
+    display: flex;
+    gap: 24px;
+}
 
-.btn {}
+.btn {
+    padding: 0px 40px;
+}
 
-.btn-outline {}
+.btn-outline {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 52px;
+    /* identical to box height, or 325% */
 
-.btn-primary {}
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    /* white */
+    background: none;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    color: #FFFFFF;
+}
+
+.btn-primary {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 52px;
+    /* identical to box height, or 325% */
+    background: #FF5A30;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+
+    /* white */
+
+    color: #FFFFFF;
+}

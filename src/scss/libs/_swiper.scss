@@ -47,7 +47,9 @@
 
 .swiper-android .swiper-slide,
 .swiper-wrapper {
-    transform: translate3d(0px, 0, 0)
+    transform: translate3d(0px, 0, 0);
+    padding-top: 220px;
+    padding-bottom: 120px;
 }
 
 .swiper-pointer-events {
@@ -441,10 +443,10 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-scrollbar {
-    border-radius: 10px;
     position: relative;
     -ms-touch-action: none;
-    background: rgba(0, 0, 0, .1)
+    display: flex;
+    gap: 5px;
 }
 
 .swiper-horizontal>.swiper-scrollbar {

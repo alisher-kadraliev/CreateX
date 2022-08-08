@@ -46,6 +46,8 @@ function fixedNav() {
 window.addEventListener('scroll', fixedNav)
 
 
+//sad
+
 const swiper = new Swiper('.swiper__team', {
 
     // If we need pagination

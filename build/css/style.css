@@ -277,14 +277,21 @@ nav {
 
 .hero-img {
   background-image: url(../img/hero.jpg);
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  height: 998px;
 }
 
-.swiper-wrapper {
-  padding-top: 220px;
-  padding-bottom: 120px;
+.num {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  width: 178px;
+  background: none;
+  border-bottom: 2px solid #FFFFFF;
+  color: #FFFFFF;
 }
 
 .hero__title {
@@ -311,6 +318,7 @@ nav {
 
 .hero__text {
   font-style: normal;
+  max-width: 595px;
   font-weight: 400;
   font-size: 20px;
   line-height: 150%;
@@ -326,6 +334,53 @@ nav {
   display: -ms-flexbox;
   display: flex;
   gap: 24px;
+}
+
+.btn {
+  padding: 0px 40px;
+}
+
+.btn-outline {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 52px;
+  /* identical to box height, or 325% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  /* white */
+  background: none;
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  color: #FFFFFF;
+}
+
+.btn-primary {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 52px;
+  /* identical to box height, or 325% */
+  background: #FF5A30;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  /* white */
+  color: #FFFFFF;
 }
 
 /**
@@ -389,6 +444,8 @@ nav {
 .swiper-wrapper {
   -webkit-transform: translate3d(0px, 0, 0);
           transform: translate3d(0px, 0, 0);
+  padding-top: 220px;
+  padding-bottom: 120px;
 }
 
 .swiper-pointer-events {
@@ -860,10 +917,12 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-scrollbar {
-  border-radius: 10px;
   position: relative;
   -ms-touch-action: none;
-  background: rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
 }
 
 .swiper-horizontal > .swiper-scrollbar {
