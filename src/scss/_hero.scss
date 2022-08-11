@@ -14,7 +14,51 @@
     &__hero {}
 }
 
+.swiper-scrollbar {
+    position: relative;
+    display: flex;
+    gap: 5px;
+}
 
+.swiper {}
+
+.mySwiper {}
+
+.swiper-wrapper {
+    padding-top: 220px;
+    padding-bottom: 120px;
+}
+
+.swiper-slide {}
+
+.container {}
+
+.hero {
+
+    // .hero__title
+
+    &__title {}
+
+    // .hero__text
+
+    &__text {}
+}
+
+.buttons {}
+
+.btn {}
+
+.btn-outline {}
+
+.btn-primary {}
+
+.swiper-pagination {}
+
+.swiper-button-prev {}
+
+.swiper-button-next {}
+
+.swiper-scrollbar {}
 
 
 .num {

@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 </head>
 
 <body class="main__body">
@@ -58,9 +59,9 @@
 
     <!-- Main Page -->
     <main>
-            <section class="section__hero">
+        <section class="section__hero">
     <div class="hero-img">
-        <div class="swiper">
+        <div class="swiper mySwiper">
 
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -95,10 +96,22 @@
         </div>
     </div>
 </section>
+        <section class="section__about">
+    <div class="container">
+        <h1 class="title about__title">We are Createx Construction Bureau</h1>
+        <p class="text about__text">We are rightfully considered to be the best construction company in the USA.</p>
+        <div class="about__video">
+            <button class="about__play"><img src="./img/play.svg" alt=""></button>
+            <button class="about__mute"><img src="./img/mute.svg" alt=""></button>
+            <video src="about.mp4" class="about__video-scr" muted loop preload="metadata"></video>
+        </div>
+    </div>
+</section>
     </main>
 
     <!-- Footer -->
     
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
 </body>
 
