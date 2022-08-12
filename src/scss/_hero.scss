@@ -127,9 +127,7 @@
     gap: 24px;
 }
 
-.btn {
-    padding: 0px 40px;
-}
+.btn {}
 
 .btn-outline {
     font-style: normal;
@@ -137,7 +135,7 @@
     font-size: 16px;
     line-height: 52px;
     /* identical to box height, or 325% */
-
+    padding: 0px 40px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -163,7 +161,7 @@
     text-align: center;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-
+    padding: 0px 40px;
     /* white */
 
     color: #FFFFFF;
