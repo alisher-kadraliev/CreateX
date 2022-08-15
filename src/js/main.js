@@ -54,13 +54,3 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     },
 });
-
-//swipe
-var swiper = new Swiper(".mySwipers", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    pagination: {
-        el: ".swiper-paginations",
-        clickable: true,
-    },
-});
