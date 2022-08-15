@@ -6,7 +6,7 @@
         background: url(../img/service.jpg);
         padding-top: 212px;
         padding-bottom: 85px;
-        
+
     }
 }
 
@@ -17,26 +17,20 @@
 .text {}
 
 .src {
-    content: "";
-    bottom: 0;
-    top: 0px;
-    left: 0;
-    right: 0;
-    position: absolute;
-
-    &:hover {
-        color: #fff;
-    }
+    fill: #FF5A30;
 }
 
 
-.icon {
-    margin-left: 100px;
-    margin-top: 70px;
-
-}
+.icon {}
 
 .service {
+    &__item-content {
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
     // .service__list
 
@@ -45,28 +39,82 @@
         justify-content: space-between;
         gap: 30px;
         padding-top: 60px;
+
+        @media(max-width: $breakpoint992) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
     // .service__item
 
     &__item {
-        position: relative;
+
         background: #FFFFFF;
         /* gray/300 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         border: 1px solid #E5E8ED;
         box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
         border-radius: 4px;
         width: 285px;
-        transition: .3s ease;
-        padding: 120px 0px;
+        height: 285px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-image: url(../img/service1.jpg);
+            opacity: 0;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: opacity 0.3s ease-in-out;
+            z-index: 10;
+
+
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: rgba($color: #1E212C, $alpha: 0.6);
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            z-index: 11;
+
+        }
 
         &:hover {
-            background: url(../img/service1.jpg) no-repeat;
-            transition: .3s ease;
-            color: #fff;
+            &::before {
+                opacity: 1;
+            }
+
+            &::after {
+                opacity: 1;
+            }
+
+            .src {
+                fill: #fff;
+            }
+
+            .service__subtitle {
+                color: #fff;
+            }
         }
 
     }
+
 
     // .service__icon
 
@@ -80,7 +128,6 @@
         font-size: 20px;
         line-height: 150%;
         /* identical to box height, or 30px */
-        padding-top: 140px;
         text-align: center;
         /* gray/900 */
 

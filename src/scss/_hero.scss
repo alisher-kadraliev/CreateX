@@ -129,40 +129,4 @@
 
 .btn {}
 
-.btn-outline {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 52px;
-    /* identical to box height, or 325% */
-    padding: 0px 40px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    /* white */
-    background: none;
-    border: 1px solid #FFFFFF;
-    border-radius: 4px;
-    color: #FFFFFF;
-}
 
-.btn-primary {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 52px;
-    /* identical to box height, or 325% */
-    background: #FF5A30;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    padding: 0px 40px;
-    /* white */
-
-    color: #FFFFFF;
-}

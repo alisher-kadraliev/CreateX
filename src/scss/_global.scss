@@ -25,6 +25,7 @@
 // Body Locked
 body {
     font-family: 'Ubuntu', sans-serif;
+
     &.locked {
         overflow: hidden;
     }
@@ -39,5 +40,55 @@ body {
 
     100% {
         opacity: 1;
+    }
+}
+
+.btn-primary {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 52px;
+    /* identical to box height, or 325% */
+    background: #FF5A30;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 0px 40px;
+    /* white */
+    transition: .3s ease-in-out;
+    color: #FFFFFF;
+
+    &:hover {
+        background: $primary-hover;
+        transition: .3s ease-in-out;
+    }
+}
+
+.btn-outline {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 52px;
+    /* identical to box height, or 325% */
+    padding: 0px 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    /* white */
+    background: none;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    transition: .3s ease;
+    color: #FFFFFF;
+
+    &:hover {
+        background: $primary;
+        transition: .3s ease;
+        border: 1px solid $primary;
     }
 }

@@ -36,6 +36,11 @@ nav {
         @media(max-width: $breakpoint1200) {
             margin-left: 23px;
         }
+
+        &:hover {
+            transition: .3s ease;
+            transform: translateY(-10%);
+        }
     }
 
     // .menu__item-link
@@ -50,9 +55,12 @@ nav {
 
 
         color: $gray;
+        transition: .3s ease;
 
         &:hover {
-            color: $black;
+            color: $primary;
+            transition: .3s ease;
+            transform: translateY(-5%);
         }
     }
 }
@@ -250,6 +258,12 @@ nav {
         /* gray/900 */
 
         color: $black;
+
+        &:hover {
+            color: $primary;
+            transition: .3s ease;
+            transform: translateY(-5%);
+        }
     }
 }
 
@@ -306,5 +320,11 @@ nav {
         /* gray/900 */
 
         color: $black;
+
+        &:hover {
+            color: $primary;
+            transition: .3s ease;
+            transform: translateY(-5%);
+        }
     }
 }
