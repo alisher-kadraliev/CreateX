@@ -54,3 +54,12 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+//slide
+$(document).ready(function () {
+    $(".slider").slick({
+        slidesToShow: 3,
+        slidesToScroll:2,
+    });
+});
+

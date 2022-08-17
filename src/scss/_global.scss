@@ -92,3 +92,10 @@ body {
         border: 1px solid $primary;
     }
 }
+
+.slick-track{
+    display: flex;
+}
+.slick-list{
+    overflow: hidden;
+}
