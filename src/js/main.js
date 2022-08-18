@@ -59,7 +59,11 @@ var swiper = new Swiper(".mySwiper", {
 $(document).ready(function () {
     $(".slider").slick({
         slidesToShow: 3,
-        slidesToScroll:2,
+        slidesToScroll: 2,
+    });
+    $(".clients__swiper").slick({
+        arrows:true,
+        
     });
 });
 

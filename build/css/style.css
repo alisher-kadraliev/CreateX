@@ -1022,6 +1022,130 @@ nav {
   color: #1E212C;
 }
 
+.section__clients {
+  padding-top: 80px;
+  background: #F4F5F7;
+  padding-bottom: 121px;
+}
+
+.clients_name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  /* identical to box height, or 26px */
+  padding-top: 24px;
+  /* gray/900 */
+  color: #1E212C;
+}
+
+.clients__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 130%;
+  /* identical to box height, or 60px */
+  text-align: center;
+  /* gray/900 */
+  color: #1E212C;
+}
+
+.clients__sup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 60px;
+  padding-top: 60px;
+  padding-bottom: 170px;
+}
+
+.clients__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 135px;
+}
+
+.clients__swip {
+  min-width: 0;
+}
+
+.clients__swiper {
+  min-width: 0;
+  position: relative;
+}
+
+.clients__swiper.slick-arrow.slick-disabled {
+  opacity: 0.3;
+}
+
+.clients__swiper .slick-arrow {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.clients__swiper .slick-arrow.slick-prev {
+  right: 50px;
+  background-image: url(../img/left.svg);
+  bottom: -25px;
+  font-size: 0;
+  background-color: #F4F5F7;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.clients .slick-arrow.slick-next {
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  background-color: #F4F5F7;
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  font-size: 0;
+  background-image: url(../img/left.svg);
+  bottom: -25px;
+}
+
+.clients__subtitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 130%;
+  /* identical to box height, or 60px */
+  /* gray/900 */
+  color: #1E212C;
+  padding-bottom: 60px;
+}
+
+.clients__info {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  /* or 26px */
+  max-width: 600px;
+  padding-top: 24px;
+  /* gray/800 */
+  color: #424551;
+}
+
+.clients__pos {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  /* identical to box height, or 21px */
+  /* gray/700 */
+  color: #787A80;
+}
+
 @media (max-width: 1199.98px) {
   .container {
     max-width: 1200px;
