@@ -5,7 +5,6 @@
     &__clients {
         padding-top: 80px;
         background: #F4F5F7;
-        padding-bottom: 121px;
     }
 }
 
@@ -72,6 +71,7 @@
 
     &__swip {
         min-width: 0;
+        padding-bottom: 121px;
     }
 
     // .clients__swiper
@@ -174,7 +174,11 @@
 
     // .clients__main-img
 
-    &__main-img {}
+    &__main-img {
+        transform: translateY(40px);
+        margin-top: -40px;
+        border-radius: 4px;
+    }
 }
 
 .sup-img {}
