@@ -1,0 +1,101 @@
+.section {
+
+    // .section__main-hero
+
+    &__main-hero {
+
+        background: #F4F5F7;
+        padding-bottom: 179px;
+        padding-top: 80px;
+    }
+}
+
+.container {}
+
+.main-hero {
+
+    // .main-hero__item
+
+    &__item {}
+
+    // .main-hero__navigate
+
+    &__navigate {}
+
+    // .main-hero__Homepage
+
+    &__Homepage {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: #424551;
+
+    }
+
+
+    // .main-hero__Services
+
+    &__Services {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: #9A9CA5;
+
+        &--2 {
+            color: #424551;
+        }
+    }
+
+    &__İnterior {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        /* identical to box height, or 21px */
+
+
+        /* gray/600 */
+
+        color: #9A9CA5;
+    }
+
+    // .main-hero__title
+
+    &__title {
+        z-index: 11111;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 130%;
+        letter-spacing: 1px;
+        padding-bottom: 24px;
+        padding-top: 40px;
+        color: #1E212C;
+    }
+
+    // .main-hero__text
+
+    &__text {
+        z-index: 11111;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        color: #787A80;
+        max-width: 600px;
+    }
+
+    // .main-hero__item-right
+
+    &__item-right {}
+}
+
+.icon-around {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #9A9CA5;
+}

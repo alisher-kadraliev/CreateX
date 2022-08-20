@@ -89,13 +89,27 @@ body {
     &:hover {
         background: $primary;
         transition: .3s ease;
+        color: #FFFFFF;
         border: 1px solid $primary;
     }
 }
 
-.slick-track{
+.slick-track {
     display: flex;
 }
-.slick-list{
+
+.slick-list {
     overflow: hidden;
+}
+
+.main-color {
+
+    background: #F4F5F7;
+}
+
+.bg-hero {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
 }

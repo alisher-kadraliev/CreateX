@@ -39,13 +39,11 @@ nav {
 
         &:hover {
             transition: .3s ease;
-            transform: translateY(-10%);
         }
     }
 
     // .menu__item-link
     &__item-link {
-        font-family: 'Ubuntu';
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
@@ -60,7 +58,6 @@ nav {
         &:hover {
             color: $primary;
             transition: .3s ease;
-            transform: translateY(-5%);
         }
     }
 }
@@ -204,6 +201,7 @@ nav {
 
 
 .tell {
+    z-index: 11111;
     display: flex;
 
     // .tell__img
@@ -268,6 +266,7 @@ nav {
 }
 
 .chat {
+    z-index: 11111;
     display: flex;
     align-content: inherit;
     justify-content: center;
