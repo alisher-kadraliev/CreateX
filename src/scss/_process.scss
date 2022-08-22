@@ -1,0 +1,139 @@
+.section {
+
+    // .section__process
+
+    &__process {
+        padding-bottom: 120px;
+    }
+}
+
+.container {}
+
+.process {
+
+    // .process__title
+
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 46px;
+        line-height: 130%;
+        /* identical to box height, or 60px */
+
+
+        /* gray/900 */
+        padding-bottom: 60px;
+        color: #1E212C;
+    }
+
+    // .process__list
+
+    &__list {
+        display: flex;
+        gap: 30px;
+    }
+
+    // .process__item
+
+    &__item {
+        max-width: 285px;
+
+    }
+
+    // .process__img
+
+
+    // .process__subtitle
+    &__img {}
+
+    &__subtitle {
+        padding-top: 16px;
+        padding-bottom: 8px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+        /* identical to box height, or 30px */
+
+        display: flex;
+        align-items: center;
+
+        /* gray/900 */
+
+        color: #1E212C;
+
+        &--1{
+            padding-top:50px;
+        }
+    }
+
+    // .process__text
+
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        /* or 26px */
+
+
+        /* gray/700 */
+
+        color: #787A80;
+    }
+
+    .process {
+
+        // .process__gradient
+
+        &__gradient {
+            // .gradient__img
+            position: relative;
+        }
+    }
+
+    .gradient {
+
+        &__img {
+            position: absolute;
+            left: -31px;
+            top: -41px;
+        }
+
+        // .gradient__03
+
+        &__03 {
+            position: absolute;
+            left: 0px;
+            top: -10px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 46px;
+            line-height: 130%;
+            /* identical to box height, or 60px */
+
+            display: flex;
+            align-items: center;
+
+            /* primary */
+
+            color: #FF5A30;
+        }
+    }
+}
+
+
+.line {
+    padding-top: 15px;
+    padding-left: 23px;
+}
+
+.line-2 {
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.line-3 {
+    padding-top: 17px;
+    padding-left: 80px;
+}

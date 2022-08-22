@@ -1,6 +1,9 @@
 .section {
 
     // .section__our
+    &__our-2 {
+        background: #1E212C;
+    }
 
     &__our {}
 }
@@ -181,5 +184,24 @@
         /* white */
         padding: 0px 32px;
         color: #FFFFFF;
+    }
+}
+
+.our-2 {
+    &__title {
+        color: #fff;
+        padding-top: 80px;
+    }
+    &__text{
+        color: #fff;
+        opacity: 0.6;
+    }
+    &__title-2{
+        color: #fff;
+    }
+    &__btn{
+        display: flex;
+        margin: 0 auto;
+        transform: translateY(20px);
     }
 }

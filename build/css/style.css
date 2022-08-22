@@ -191,10 +191,6 @@ body.locked {
   right: 0;
 }
 
-nav {
-  overflow: hidden;
-}
-
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -224,6 +220,7 @@ nav {
 
 .menu__item {
   margin-left: 40px;
+  z-index: 1111;
 }
 
 .menu__item:hover {
@@ -233,6 +230,7 @@ nav {
 }
 
 .menu__item-link {
+  z-index: 1111;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -396,6 +394,65 @@ nav {
   -webkit-transform: translateY(-5%);
       -ms-transform: translateY(-5%);
           transform: translateY(-5%);
+}
+
+/* Dropdown Button */
+
+.dropbtn {
+  font-size: 16px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.dropbtn svg {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+/* Dropdown button on hover & focus */
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 90px;
+  z-index: 10000;
+}
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+  color: white;
+  padding: 10px 5px;
+  text-decoration: none;
+  background-color: #FF5A30;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+  color: #424551;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+
+.show {
+  display: block;
+}
+
+.drop-icon {
+  fill: #424551;
 }
 
 .hero-img {
@@ -678,6 +735,10 @@ nav {
   color: #FFFFFF;
 }
 
+.section__our-2 {
+  background: #1E212C;
+}
+
 .title {
   font-style: normal;
   font-weight: 700;
@@ -832,6 +893,30 @@ nav {
   /* white */
   padding: 0px 32px;
   color: #FFFFFF;
+}
+
+.our-2__title {
+  color: #fff;
+  padding-top: 80px;
+}
+
+.our-2__text {
+  color: #fff;
+  opacity: 0.6;
+}
+
+.our-2__title-2 {
+  color: #fff;
+}
+
+.our-2__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-transform: translateY(20px);
+      -ms-transform: translateY(20px);
+          transform: translateY(20px);
 }
 
 .section__project {
@@ -1989,6 +2074,177 @@ footer {
   margin-top: 0;
 }
 
+.section__process {
+  padding-bottom: 120px;
+}
+
+.process__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 130%;
+  /* identical to box height, or 60px */
+  /* gray/900 */
+  padding-bottom: 60px;
+  color: #1E212C;
+}
+
+.process__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.process__item {
+  max-width: 285px;
+}
+
+.process__subtitle {
+  padding-top: 16px;
+  padding-bottom: 8px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  /* identical to box height, or 30px */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* gray/900 */
+  color: #1E212C;
+}
+
+.process__subtitle--1 {
+  padding-top: 50px;
+}
+
+.process__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  /* or 26px */
+  /* gray/700 */
+  color: #787A80;
+}
+
+.process .process__gradient {
+  position: relative;
+}
+
+.process .gradient__img {
+  position: absolute;
+  left: -31px;
+  top: -41px;
+}
+
+.process .gradient__03 {
+  position: absolute;
+  left: 0px;
+  top: -10px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 130%;
+  /* identical to box height, or 60px */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* primary */
+  color: #FF5A30;
+}
+
+.line {
+  padding-top: 15px;
+  padding-left: 23px;
+}
+
+.line-2 {
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+.line-3 {
+  padding-top: 17px;
+  padding-left: 80px;
+}
+
+.section__pricing {
+  background: #F4F5F7;
+  padding-top: 80px;
+}
+
+.pricing__item {
+  background: #FFFFFF;
+  /* gray/300 */
+  border: 1px solid #E5E8ED;
+  /* shadow/small */
+  -webkit-box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+          box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+  border-radius: 4px;
+}
+
+.pricing__th {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  /* identical to box height, or 27px */
+  /* gray/900 */
+  color: #1E212C;
+}
+
+.pricing__grup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pricing__td {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  /* identical to box height, or 26px */
+  /* gray/800 */
+  color: #424551;
+}
+
+.pricing__day {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  /* identical to box height, or 26px */
+  text-align: center;
+  /* gray/800 */
+  color: #424551;
+}
+
+.pricing__btn {
+  color: #FF5A30;
+  border: 1px solid #FF5A30;
+}
+
+.td-main {
+  padding: 16px 465px 16px 24px;
+}
+
+.td-main--1 {
+  background: #F4F5F7;
+}
+
 @media (max-width: 1199.98px) {
   .container {
     max-width: 1200px;
@@ -2144,6 +2400,7 @@ footer {
   }
 
   .menu__item {
+    z-index: 1111;
     margin-top: 15px;
   }
 

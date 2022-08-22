@@ -26,10 +26,24 @@
             <div class="navbar">
                 <div class="logo"> <a href="#"> <img src="./img/logo.svg" alt=""> </a> </div>
                 <ul class="menu">
-                    <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>About Us</a></li>
-                    <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Services </a></li>
-                    <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Work</a></li>
-                    <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>News</a></li>
+                    <li class="menu__item"><a href="about.hmtl" class="menu__item-link" data-scroll>About Us</a></li>
+                    <div class="dropdown">
+                        <li class="menu__item"><button  onclick="myFunction()" class="menu__item-link dropbtn"
+                                data-scroll>Services  <svg  width="14" height="9" viewBox="0 0 16 9"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path class="drop-icon" fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0.292893 8.70711C-0.0976311 8.31658 -0.0976311 7.68342 0.292893 7.29289L7.29289 0.292893C7.68342 -0.0976315 8.31658 -0.0976315 8.70711 0.292893L15.7071 7.29289C16.0976 7.68342 16.0976 8.31658 15.7071 8.70711C15.3166 9.09763 14.6834 9.09763 14.2929 8.70711L8 2.41421L1.70711 8.70711C1.31658 9.09763 0.683417 9.09763 0.292893 8.70711Z" />
+                                    </svg>
+                            </button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="services.html">Service-1</a>
+                                <a href="services-2.html">Service-2</a>
+                            </div>
+                    </div>
+                    </li>
+                    <li class="menu__item"><a href="portfolio.html" class="menu__item-link" data-scroll>Work</a></li>
+                    <li class="menu__item"><a href="news.html" class="menu__item-link" data-scroll>News</a></li>
+                    <li class="menu__item"><a href="contack.hmtl" class="menu__item-link" data-scroll>Contacts</a></li>
                 </ul>
                 <!-- Slider main container -->
 

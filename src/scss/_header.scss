@@ -1,9 +1,7 @@
 // Header// Header
 
 // Navbar
-nav {
-    overflow: hidden;
-}
+nav {}
 
 .navbar {
     display: flex;
@@ -32,6 +30,7 @@ nav {
     // .menu__item
     &__item {
         margin-left: 40px;
+        z-index: 1111;
 
         @media(max-width: $breakpoint1200) {
             margin-left: 23px;
@@ -44,6 +43,7 @@ nav {
 
     // .menu__item-link
     &__item-link {
+        z-index: 1111;
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
@@ -160,6 +160,7 @@ nav {
 
     // .menu__item
     .menu__item {
+        z-index: 1111;
         margin-top: 15px;
     }
 
@@ -326,4 +327,59 @@ nav {
             transform: translateY(-5%);
         }
     }
+}
+
+/* Dropdown Button */
+.dropbtn {
+    font-size: 16px;
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    svg {
+        transform: rotate(180deg);
+    }
+
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 90px;
+    z-index: 10000;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 10px 5px;
+    text-decoration: none;
+    background-color: $primary;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    color: $gray;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
+
+.drop-icon {
+    fill: $gray;
+
 }

@@ -28,10 +28,24 @@
             <div class="navbar">
                 <div class="logo"> <a href="#"> <img src="./img/logo.svg" alt=""> </a> </div>
                 <ul class="menu">
-                    <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>About Us</a></li>
-                    <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Services </a></li>
-                    <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Work</a></li>
-                    <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>News</a></li>
+                    <li class="menu__item"><a href="about.hmtl" class="menu__item-link" data-scroll>About Us</a></li>
+                    <div class="dropdown">
+                        <li class="menu__item"><button  onclick="myFunction()" class="menu__item-link dropbtn"
+                                data-scroll>Services  <svg  width="14" height="9" viewBox="0 0 16 9"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path class="drop-icon" fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0.292893 8.70711C-0.0976311 8.31658 -0.0976311 7.68342 0.292893 7.29289L7.29289 0.292893C7.68342 -0.0976315 8.31658 -0.0976315 8.70711 0.292893L15.7071 7.29289C16.0976 7.68342 16.0976 8.31658 15.7071 8.70711C15.3166 9.09763 14.6834 9.09763 14.2929 8.70711L8 2.41421L1.70711 8.70711C1.31658 9.09763 0.683417 9.09763 0.292893 8.70711Z" />
+                                    </svg>
+                            </button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="services.html">Service-1</a>
+                                <a href="services-2.html">Service-2</a>
+                            </div>
+                    </div>
+                    </li>
+                    <li class="menu__item"><a href="portfolio.html" class="menu__item-link" data-scroll>Work</a></li>
+                    <li class="menu__item"><a href="news.html" class="menu__item-link" data-scroll>News</a></li>
+                    <li class="menu__item"><a href="contack.hmtl" class="menu__item-link" data-scroll>Contacts</a></li>
                 </ul>
                 <!-- Slider main container -->
 
@@ -62,9 +76,9 @@
     <div class="container">
         <div class="main-hero__item">
             <div class="main-hero__navigate">
-                <a href="#Homepage" class="main-hero__Homepage">Homepage</a> <span class="icon-around">/</span>
-                <a href="#Services" class="main-hero__Services main-hero__Services--2">Services</a><span class="icon-around">/</span>
-                <a href="" class="main-hero__İnterior">Interior Design</a>
+                <a href="index.html" class="main-hero__Homepage">Homepage</a> <span class="icon-around">/</span>
+                <a href="services.html" class="main-hero__Services main-hero__Services--2">Services</a><span class="icon-around">/</span>
+                <a href="services-2.html" class="main-hero__İnterior">Interior Design</a>
             </div>
             <h1 class="main-hero__title">INTERIOR <br> DESIGN</h1>
             <p class="main-hero__text">Dui augue nec mi mi. Ut ac lectus donec fames pellentesque. Laoreet aenean
@@ -123,6 +137,245 @@
             </div>
 
 
+        </div>
+    </div>
+</section>
+        <section class="section__process">
+    <div class="container">
+        <div class="process">
+            <h1 class="process__title">
+                That’s how we do it
+            </h1>
+            <div class="process__list">
+                <div class="process__item">
+                    <img src="./img/01.svg" alt="" class="process__img">
+                    <img src="./img/line.svg" class="line" alt="">
+                    <h1 class="process__subtitle">Work Estimate</h1>
+                    <p class="process__text">Culpa nostrud commodo ea consequat aliquip reprehenderit.</p>
+                </div>
+                <div class="process__item">
+                    <img src="./img/02.svg" alt="" class="process__img">
+                    <img src="./img/line.svg" class="line-2" alt="">
+                    <h1 class="process__subtitle">Contract</h1>
+                    <p class="process__text">Laoreet ultrices curabitur luctus quisque consequat. Leo lorem velit
+                        imperdiet auctor et tempor.</p>
+                </div>
+                <div class="process__item">
+                    <div class="process__gradient">
+                        <img src="./img/bg-circles.png" alt="" class="gradient__img">
+                        <img src="./img/line.svg" class="line-3" alt="">
+                        <div class="gradient__03">03</div>
+                    </div>
+                    <h1 class="process__subtitle process__subtitle--1 ">Mobilization</h1>
+                    <p class="process__text">COdio massa scelerisque purus arcu sed velit eleifend cursus leo.</p>
+                </div>
+                <div class="process__item">
+                    <img src="./img/04.svg" alt="" class="process__img">
+
+                    <h1 class="process__subtitle">Construction Work</h1>
+                    <p class="process__text">Adipisicing esse aliqua aliquip qui amet. Aute eiusmod dolore dolore et ad
+                        et veniam ad deserunt.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="section__our section__our-2">
+    <div class="container">
+        <h1 class="title our-2__title">Our core values</h1>
+        <p class="text our-2__text">Our mission is to set the highest standards for construction sphere.</p>
+        <div class="our">
+            <div class="our__list">
+                <img src="./img/our-1.svg" alt="" class="our__icon">
+                <h3 class="our__title our-2__title-2">Quality</h3>
+                <p class="our__text our-2__text">Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit
+                    nostrud
+                    aliquip sunt.</p>
+            </div>
+            <div class="our__list">
+                <img src="./img/our-2.svg" alt="" class="our__icon">
+                <h3 class="our__title our-2__title-2">Safety</h3>
+                <p class="our__text our-2__text">Anim reprehenderit sint voluptate exercitation adipisicing laborum
+                    adipisicing.
+                    Minim empor est ea.</p>
+            </div>
+            <div class="our__list">
+                <img src="./img/our-3.svg" alt="" class="our__icon">
+                <h3 class="our__title our-2__title-2">Comfort</h3>
+                <p class="our__text our-2__text">Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit
+                    voluptate ullamco
+                    proident ea ad.</p>
+            </div>
+        </div>
+<button class="btn-primary our-2__btn">Discuss a project</button>
+    </div>
+</section>
+        <section class="section__project">
+    <div class="container">
+        <div class="project">
+            <div class="project__title">Related projects</div>
+            <div class="slider">
+                <div class="slider__item">
+                    <div class="project__item">
+                        <img src="./img/project-1.jpg" alt="">
+                        <h3 class="project__subtitle">Kids Bedroom With Decorations</h3>
+                        <p class="project__text">Apartments & flats</p>
+                        <button class="project__button-outline">View Project</button>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="project__item">
+                        <img src="./img/project-2.jpg" class="image-100" alt="">
+                        <h3 class="project__subtitle">Modern Double Bedroom</h3>
+                        <p class="project__text">Apartments & flats</p>
+                        <button class="project__button-outline">View Project</button>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="project__item">
+
+                        <img src="./img/project-3.jpg" alt="">
+                        <h3 class="project__subtitle">Scandinavian Style Interior</h3>
+                        <p class="project__text">Private houses</p>
+                        <button class="project__button-outline">View Project</button>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="project__item">
+
+                        <img src="./img/project-1.jpg" alt="">
+                        <h3 class="project__subtitle">Red Finger Building</h3>
+                        <p class="project__text">Business Centers</p>
+                        <button class="project__button-outline">View Project</button>
+                    </div>
+                </div>
+                <div class="slider__item">
+
+                    <div class="project__item">
+                        <img src="./img/project-2.jpg" class="image-100" alt="">
+                        <h3 class="project__subtitle">Red Finger Building</h3>
+                        <p class="project__text">Business Centers</p>
+                        <button class="project__button-outline">View Project</button>
+                    </div>
+                </div>
+                <div class="slider__item">
+
+                    <div class="project__item">
+                        <img src="./img/project-3.jpg" alt="">
+                        <h3 class="project__subtitle">Red Finger Building</h3>
+                        <p class="project__text">Business Centers</p>
+                        <button class="project__button-outline">View Project</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project__explore">
+                <h3 class="explore__title">Explore all our works</h3>
+                <button class="btn-primary explore__btn">View portfolio</button>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="section__pricing">
+    <div class="container">
+        <div class="pricing">
+            <h1 class="pricing__title title">Pricing</h1>
+            <p class="pricing__text text">We offer you three categories of construction.</p>
+            <div class="pricing__item">
+                <table>
+                    <tr class="pricing__tr">
+                        <th class="pricing__th">Items</th>
+                        <div class="pricing__grup">
+                            <th class="pricing__th">BASIC</th>
+
+                            <div class="pricing__subtitle">$20 per m2</div>
+                        </div>
+                        <div class="pricing__grup">
+                            <th class="pricing__th">BASIC</th>
+
+                            <div class="pricing__subtitle">$20 per m2</div>
+                        </div>
+                        <div class="pricing__grup">
+                            <th class="pricing__th">BASIC</th>
+
+                            <div class="pricing__subtitle">$20 per m2</div>
+                        </div>
+                    </tr>
+                    <tr class="pricing__tr">
+                        <td class="pricing__td td-main ">Installation plan</td>
+                        <td class="pricing__td "><img src="./img/mark.svg" alt=""></td>
+                        <td class="pricing__td"><img src="./img/mark.svg" alt=""></td>
+                        <td class="pricing__td"><img src="./img/mark.svg" alt=""></td>
+                    </tr>
+                    <tr class="pricing__tr ">
+                        <div class="td-main--1">
+                        <td class="pricing__td td-main ">Planning solutions (2-3 options)</td>
+                            <td class="pricing__td">
+                                <img src="./img/mark.svg" alt="">
+                            </td>
+                            <td class="pricing__td">
+                                <img src="./img/mark.svg" alt="">
+                            </td>
+                            <td class="pricing__td">
+                                <img src="./img/mark.svg" alt="">
+                            </td>
+                        </div>
+                    </tr>
+                    <tr class="pricing__tr">
+                        <td class="pricing__td td-main ">Lighting plan</td>
+                        <td class="pricing__td"><img src="./img/mark.svg" alt=""></td>
+                        <td class="pricing__td"><img src="./img/mark.svg" alt=""></td>
+                        <td class="pricing__td"><img src="./img/mark.svg" alt=""></td>
+                    </tr>
+                    <tr class="pricing__tr">
+                        <td class="pricing__td td-main td-main--1">Flooring plan</td>
+                        <td class="pricing__td"><img src="./img/mark.svg" alt=""></td>
+                        <td class="pricing__td"><img src="./img/mark.svg" alt=""></td>
+                        <td class="pricing__td"><img src="./img/mark.svg" alt=""></td>
+                    </tr>
+                    <tr class="pricing__tr">
+                        <td class="pricing__td td-main ">Heating floor laying scheme</td>
+                        <td class="pricing__td"><img src="./img/mark.svg" alt=""></td>
+                        <td class="pricing__td"><img src="./img/mark.svg" alt=""></td>
+                        <td class="pricing__td"><img src="./img/mark.svg" alt=""></td>
+                    </tr>
+                    <tr class="pricing__tr">
+                        <td class="pricing__td td-main td-main--1">Air conditioner zones layout</td>
+                        <td class="pricing__td"><img src="./img/mark.svg" alt=""></td>
+                        <td class="pricing__td"><img src="./img/mark.svg" alt=""></td>
+                        <td class="pricing__td"><img src="./img/mark.svg" alt=""></td>
+                    </tr>
+                    <tr class="pricing__tr">
+                        <td class="pricing__td td-main ">3D visualization of all rooms</td>
+                        <td class="pricing__td">
+                            <div class="pricing__day">simplified</div>
+                        </td>
+                        <td class="pricing__td"><img src="./img/mark.svg" alt=""></td>
+                        <td class="pricing__td"><img src="./img/mark.svg" alt=""></td>
+                    </tr>
+                    <tr class="pricing__tr">
+                        <td class="pricing__td td-main td-main--1">Visualization of each room (3-4 angles)</td>
+                        <td class="pricing__td"><img src="./img/mark.svg" alt=""></td>
+                    </tr>
+                    <tr class="pricing__tr">
+                        <td class="pricing__td td-main ">Terms</td>
+                        <td class="pricing__td">
+                            <div class="pricing__day ">10 days</div>
+                        </td>
+                        <td class="pricing__td">
+                            <div class="pricing__day">20 days</div>
+                        </td>
+                        <td class="pricing__td">
+                            <div class="pricing__day">30 days</div>
+                        </td>
+                    </tr>
+                    <tr class="pricing__tr">
+                        <td class="pricing__td td-main">Installation plan</td>
+                        <td class="pricing__td"><button class="btn-outline pricing__btn">send request</button></td>
+                        <td class="pricing__td"><button class="btn-outline pricing__btn">send request</button></td>
+                        <td class="pricing__td"><button class="btn-outline  pricing__btn">send request</button></td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
 </section>
