@@ -116,3 +116,24 @@ $(document).ready(function () {
     });
 
 })
+
+//slide for work
+$(document).ready(function () {
+    $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        fade: true,
+        asNavFor: '.slider-nav'
+    });
+    $('.slider-nav').slick({
+        slidesToShow: 5,
+        arrows:false,
+        asNavFor: '.slider-for',
+        infinite: true,
+        draggable: false,
+        focusOnSelect: true
+    });
+});

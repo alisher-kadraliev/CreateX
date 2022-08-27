@@ -1,0 +1,138 @@
+.section {
+
+    // .section__hero-work
+
+    &__hero-work {
+        padding-top: 93px;
+        padding-bottom: 100px;
+        background: url("../img/bg-imagework.png") 1214px 0 /40% no-repeat;
+    }
+}
+
+.container {}
+
+
+
+.icon-around {}
+
+.hero-work {
+
+    // .hero-work__title
+
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 120%;
+        /* identical to box height, or 77px */
+
+        letter-spacing: 1px;
+
+        /* gray/900 */
+
+        color: #1E212C;
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+
+    // .hero-work__item
+
+    &__item {}
+}
+
+.slider-for {
+
+    // .slider-for__item
+
+    &__item {}
+}
+
+.slider-nav {
+
+    // .slider-nav__item
+
+    &__item {}
+}
+
+.image-opacity {
+    opacity: 0.6;
+    border-radius: 4px;
+}
+
+.slider-for {
+    position: relative;
+}
+
+.slider-nav {
+    width: 800px;
+    padding-top: 20px;
+}
+
+.slider-nav .slick-active {
+    opacity: 1;
+}
+
+.slider-for .slick-arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.slider-for .slick-arrow.slick-prev {
+    z-index: 11111;
+    left: 10px;
+    background-image: url(../img/prev-1.svg);
+    top: 50%;
+    font-size: 0;
+    width: 24px;
+    background-color: #fff;
+    opacity: 0.5;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: .3s ease;
+    border-radius: 100%;
+    padding: 20px 20px;
+    margin-right: 10px;
+
+    &:hover {
+        border-radius: 100%;
+        padding: 20px 20px;
+        transition: .3s ease;
+        opacity: 1;
+
+    }
+}
+
+.slider-for__item .slick-slide .slick-active {
+    width: 20px;
+}
+
+.slider-for .slick-arrow.slick-next {
+    transition: .3s ease;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    transform: rotate(-180deg);
+    font-size: 0;
+    background: #FFFFFF;
+    opacity: 0.5;
+    background-image: url(../img/prev-1.svg);
+    top: 50%;
+    background-repeat: no-repeat;
+    z-index: 1111;
+    background-position: center;
+    border-radius: 100%;
+    padding: 20px 20px;
+
+
+    &:hover {
+        border-radius: 100%;
+        padding: 20px 20px;
+        transition: .3s ease;
+        opacity: 1;
+
+    }
+
+}

@@ -184,6 +184,10 @@ body.locked {
   background: #F4F5F7;
 }
 
+.main-color--white {
+  background: none;
+}
+
 .bg-hero {
   z-index: 0;
   position: absolute;
@@ -991,20 +995,15 @@ body.locked {
   font-size: 14px;
   line-height: 44px;
   /* identical to box height, or 314% */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
+  max-width: 172px;
   letter-spacing: 0.5px;
-  text-transform: uppercase;
   /* primary */
   background: #fff;
   color: #FF5A30;
   border: 1px solid #FF5A30;
   border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 0px 32px;
   margin: 0 auto;
@@ -1014,7 +1013,6 @@ body.locked {
 }
 
 .project__button-outline:hover {
-  display: block;
   background: #FF5A30;
   color: #fff;
   -webkit-transition: 0.3s ease;
@@ -1126,6 +1124,11 @@ body.locked {
 .section__clients {
   padding-top: 80px;
   background: #F4F5F7;
+}
+
+.section__clients--4 {
+  background: #fff;
+  padding-top: 180px;
 }
 
 .clients_name {
@@ -1847,6 +1850,16 @@ footer {
   color: #424551;
 }
 
+.main-hero__Services--3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  /* identical to box height, or 21px */
+  /* gray/600 */
+  color: #9A9CA5;
+}
+
 .main-hero__İnterior {
   font-style: normal;
   font-weight: 400;
@@ -2346,30 +2359,38 @@ footer {
   padding-bottom: 20px;
 }
 
-.project__button-outline {
-  display: none;
-}
-
 #loadMore {
   width: 200px;
-  color: #fff;
+  color: #424551;
   display: block;
   text-align: center;
   margin: 20px auto;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid transparent;
-  background-color: blue;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 8px;
+}
+
+#loadMore svg {
+  fill: #424551;
 }
 
 #loadMore:hover {
-  color: blue;
-  background-color: #fff;
-  border: 1px solid blue;
+  color: #FF5A30;
   text-decoration: none;
+}
+
+#loadMore:hover svg {
+  fill: #FF5A30;
 }
 
 .noContent {
@@ -2382,6 +2403,114 @@ footer {
   line-height: 100px;
   text-align: center;
   display: none;
+}
+
+.section__hero-work {
+  padding-top: 93px;
+  padding-bottom: 100px;
+  background: url("../img/bg-imagework.png") 1214px 0/40% no-repeat;
+}
+
+.hero-work__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 120%;
+  /* identical to box height, or 77px */
+  letter-spacing: 1px;
+  /* gray/900 */
+  color: #1E212C;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.image-opacity {
+  opacity: 0.6;
+  border-radius: 4px;
+}
+
+.slider-for {
+  position: relative;
+}
+
+.slider-nav {
+  width: 800px;
+  padding-top: 20px;
+}
+
+.slider-nav .slick-active {
+  opacity: 1;
+}
+
+.slider-for .slick-arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.slider-for .slick-arrow.slick-prev {
+  z-index: 11111;
+  left: 10px;
+  background-image: url(../img/prev-1.svg);
+  top: 50%;
+  font-size: 0;
+  width: 24px;
+  background-color: #fff;
+  opacity: 0.5;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  border-radius: 100%;
+  padding: 20px 20px;
+  margin-right: 10px;
+}
+
+.slider-for .slick-arrow.slick-prev:hover {
+  border-radius: 100%;
+  padding: 20px 20px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  opacity: 1;
+}
+
+.slider-for__item .slick-slide .slick-active {
+  width: 20px;
+}
+
+.slider-for .slick-arrow.slick-next {
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  font-size: 0;
+  background: #FFFFFF;
+  opacity: 0.5;
+  background-image: url(../img/prev-1.svg);
+  top: 50%;
+  background-repeat: no-repeat;
+  z-index: 1111;
+  background-position: center;
+  border-radius: 100%;
+  padding: 20px 20px;
+}
+
+.slider-for .slick-arrow.slick-next:hover {
+  border-radius: 100%;
+  padding: 20px 20px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  opacity: 1;
 }
 
 @media (max-width: 1199.98px) {

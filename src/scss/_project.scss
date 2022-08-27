@@ -72,12 +72,8 @@
         font-size: 14px;
         line-height: 44px;
         /* identical to box height, or 314% */
-
-        display: flex;
-        align-items: center;
-        text-align: center;
+max-width: 172px;
         letter-spacing: 0.5px;
-        text-transform: uppercase;
 
         /* primary */
         background: #fff;
@@ -90,7 +86,6 @@
         transition: .3s ease;
 
         &:hover {
-            display: block;
             background: $primary;
             color: #fff;
             transition: .3s ease;

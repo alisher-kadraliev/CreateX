@@ -105,6 +105,9 @@ body {
 .main-color {
 
     background: #F4F5F7;
+    &--white{
+        background: none;
+    }
 }
 
 .bg-hero {

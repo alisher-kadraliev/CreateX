@@ -53,28 +53,33 @@
     // .project__button-outline
 
     &__button-outline {
-        display: none;
     }
 }
 
 #loadMore {
     width: 200px;
-    color: #fff;
+    color: $gray;
     display: block;
     text-align: center;
     margin: 20px auto;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid transparent;
-    background-color: blue;
     transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    svg {
+        fill: #424551;
+    }
 }
 
 #loadMore:hover {
-    color: blue;
-    background-color: #fff;
-    border: 1px solid blue;
+    color: $primary;
     text-decoration: none;
+
+    svg {
+        fill: $primary;
+    }
 }
 
 .noContent {
