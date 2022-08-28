@@ -5,7 +5,8 @@
     &__clients {
         padding-top: 80px;
         background: #F4F5F7;
-        &--4{
+
+        &--4 {
             background: #fff;
             padding-top: 180px;
         }
@@ -71,6 +72,10 @@
 
         display: flex;
         gap: 135px;
+
+        &--const {
+            flex-direction: row-reverse;
+        }
     }
 
     &__swip {
@@ -186,3 +191,35 @@
 }
 
 .sup-img {}
+
+.clients {
+
+    // .clients__vit
+
+    &__vit {}
+
+    // .clients__fer
+
+    &__fer {
+        display: flex;
+       gap: 16px;
+       &:not(:last-child){
+        padding-bottom: 20px;
+       }
+    }
+
+    // .clients__subtext
+
+    &__subtext {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        /* identical to box height, or 26px */
+
+
+        /* gray/800 */
+
+        color: #424551;
+    }
+}
