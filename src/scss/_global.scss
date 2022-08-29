@@ -105,21 +105,29 @@ body {
 .main-color {
 
     background: #F4F5F7;
-    &--white{
+
+    &--white {
         background: none;
     }
 }
 
 .bg-hero {
-    z-index: 0;
+    z-index: 1;
     position: absolute;
     top: 0;
-    right: 0;
+    opacity: 0.4;
+    right: 0px;
 
     &__portfolio {
         top: 0px;
         max-width: 100%;
         width: 62%;
         height: auto;
+
+    }
+
+    &--1 {
+        opacity: 0.3;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
     }
 }

@@ -1,0 +1,117 @@
+.section {
+
+    // .section__quos
+
+    &__quos {
+        padding-top: 120px;
+        background-image: url(../img/quos-img.jpg);
+        background-repeat: no-repeat;
+        background-position: 1037px 1px;
+
+        padding-bottom: 120px;
+    }
+}
+
+.container {}
+
+.quos {
+    display: flex;
+    // .quos__item
+    position: relative;
+
+    &__item {}
+
+    // .quos__item--left
+
+    &__item--left {}
+
+    // .quos__img
+
+    &__img {}
+
+    // .quos__item--right
+
+    &__item--right {
+        background: #FFFFFF;
+        /* shadow/small */
+        position: absolute;
+        max-width: 735px;
+        top: -118px;
+        left: 493px;
+
+        box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+        border-radius: 4px;
+    }
+
+    // .quos__bracer
+    &__content {
+        position: relative;
+        padding: 80px 105px 71px 107px;
+    }
+
+    &__bracer {
+        position: absolute;
+        left: 57px;
+        top: 80px;
+    }
+
+    // .quos__info
+
+    &__info {}
+
+    // .quos__text
+
+    &__text {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+        /* or 30px */
+
+        /* gray/900 */
+
+        color: #1E212C;
+
+        &:not(:last-child) {
+            padding-bottom: 20px;
+        }
+    }
+
+    // .quos__name
+
+    &__name {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 160%;
+        /* identical to box height, or 26px */
+        padding-top: 60px;
+
+        /* gray/900 */
+
+        color: #1E212C;
+    }
+
+    // .quos__job
+
+    &__job {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        /* or 21px */
+
+        padding-top: 4px;
+        /* gray/700 */
+
+        color: #787A80;
+    }
+
+    // .quos__quos
+
+    &__quos {
+        position: absolute;
+        bottom: 71px;
+        right: 105px;
+    }
+}

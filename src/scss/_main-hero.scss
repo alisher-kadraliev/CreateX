@@ -7,6 +7,14 @@
         background: #F4F5F7;
         padding-bottom: 179px;
         padding-top: 80px;
+
+        &--about {
+            background-repeat: no-repeat;
+            background-position: right;
+            z-index: 111;
+
+            background-image: url(../img/after.png);
+        }
     }
 }
 
