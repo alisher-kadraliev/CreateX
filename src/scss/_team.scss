@@ -1,0 +1,113 @@
+.section {
+
+    // .section__team
+
+    &__team {
+        padding-bottom: 120px;
+        background: url(../img/team-bg.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: -133px 350px;
+    }
+}
+
+.container {}
+
+.team {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    // .team__title
+
+    &__title {}
+
+    // .team__text
+
+    &__text {}
+
+    // .team__items
+
+    &__items {}
+
+    // .team__item
+
+    &__item {}
+
+    // .team__imgq
+
+    &__img {}
+
+    // .team__name
+
+    &__name {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+        /* identical to box height, or 30px */
+        padding-top: 16px;
+        text-align: center;
+
+        /* gray/800 */
+
+        color: #424551;
+    }
+
+    // .team__job
+
+    &__job {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        /* identical to box height, or 26px */
+
+        text-align: center;
+
+        /* gray/700 */
+        padding-top: 4px;
+        color: #787A80;
+    }
+
+    // .team__link
+
+    &__link {}
+
+    // .team__subtitle
+
+    &__subtitle {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        /* identical to box height, or 27px */
+
+        text-align: center;
+
+        /* gray/900 */
+
+        color: #1E212C;
+
+        a {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            /* identical to box height, or 27px */
+
+            text-align: center;
+            text-decoration-line: underline;
+
+            /* primary */
+
+            color: #FF5A30;
+            padding-left: 4px;
+        }
+    }
+}
+
+.title {}
+
+.text {}

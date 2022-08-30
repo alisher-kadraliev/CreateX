@@ -1,0 +1,25 @@
+.section {
+
+    // .section__map
+
+    &__map {
+        padding: 80px 0 120px 0;
+        background: #F4F5F7;
+    }
+}
+
+.container {}
+
+.title {}
+
+.map {
+
+    // .map__img
+
+    &__img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+        padding-top: 60px;
+    }
+}

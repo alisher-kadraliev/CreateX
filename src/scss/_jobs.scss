@@ -1,0 +1,119 @@
+.section {
+
+    // .section__jobs
+
+    &__jobs {}
+}
+
+.container {}
+
+.jobs {
+    display: flex;
+    gap: 135px;
+    // .jobs__item
+
+    &__item {}
+
+    // .jobs__items
+
+    &__items {
+        display: flex;
+        gap: 215px;
+        background: #FFFFFF;
+        /* gray/300 */
+
+        border: 1px solid #E5E8ED;
+        border-radius: 4px;
+    }
+
+    // .jobs__content
+
+    &__content {
+        display: flex;
+    }
+
+    // .jobs__list
+
+    &__list {}
+
+    // .jobs__location
+
+    &__location {
+        width: 12px;
+        height: 0px;
+
+        /* gray/700 */
+
+        border-right: 1px solid #787A80;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        /* identical to box height, or 21px */
+
+        display: flex;
+        align-items: center;
+
+        /* gray/700 */
+
+        color: #787A80;
+    }
+
+    // .jobs__time
+
+    &__time {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        /* identical to box height, or 21px */
+
+        display: flex;
+        align-items: center;
+
+        /* gray/700 */
+
+        color: #787A80;
+    }
+
+    // .jobs__title
+
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+        /* identical to box height, or 30px */
+
+
+        /* gray/900 */
+
+        color: #1E212C;
+    }
+
+    // .jobs__btn
+
+    &__btn {}
+
+    // .jobs__subtitle
+
+    &__subtitle {}
+
+    // .jobs__text
+
+    &__text {}
+
+    // .jobs__btns
+
+    &__btns {}
+
+    // .jobs__sub
+
+    &__sub {}
+
+    // .jobs__send
+
+    &__send {}
+}
+
+.btn-outline {}

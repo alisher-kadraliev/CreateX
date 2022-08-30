@@ -130,10 +130,18 @@ $(document).ready(function () {
     });
     $('.slider-nav').slick({
         slidesToShow: 5,
-        arrows:false,
+        arrows: false,
         asNavFor: '.slider-for',
         infinite: true,
         draggable: false,
         focusOnSelect: true
+    });
+});
+
+$(document).ready(function () {
+    $('.history').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
     });
 });

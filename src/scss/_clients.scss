@@ -55,6 +55,7 @@
     // .clients__sup
 
     &__sup {
+        flex-wrap: wrap;
         display: flex;
         justify-content: space-between;
         gap: 60px;
