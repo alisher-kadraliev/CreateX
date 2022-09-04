@@ -231,10 +231,174 @@
         padding: 0 44px;
 
         &:hover {
-            background:$primary-hover;
+            background: $primary-hover;
             transition: .3s ease;
         }
     }
 }
 
 .btn-outline {}
+
+// ************************ Модальное окно ************************ //
+// mf
+.modal__wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    display: none;
+
+    .modal {
+        background: #FFFFFF;
+        /* gray/300 */
+
+        border: 1px solid #E5E8ED;
+        /* shadow/large */
+
+        box-shadow: 0px 60px 80px -20px rgba(30, 33, 44, 0.16), 0px 26px 24px -10px rgba(30, 33, 44, 0.1), 0px 12px 10px -6px rgba(30, 33, 44, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+        border-radius: 4px;
+        padding: 28px 28px 48px 48px;
+        height: 412px;
+        width: 486px;
+
+        &__title {
+            text-align: center;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 150%;
+            /* identical to box height, or 42px */
+
+            /* gray/900 */
+            padding-bottom: 24px;
+            color: #1E212C;
+        }
+
+        &__close {
+            cursor: pointer;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
+
+// ************************ Кнопка вызова модального окна ************************ //
+.modal__btn {
+
+    cursor: pointer;
+}
+
+// ************************ Модальное окно ************************ //
+// mf
+.modal__wrapper-1 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    display: none;
+
+    .modal-1 {
+        background: #FFFFFF;
+        /* gray/300 */
+
+        border: 1px solid #E5E8ED;
+        /* shadow/large */
+
+        box-shadow: 0px 60px 80px -20px rgba(30, 33, 44, 0.16), 0px 26px 24px -10px rgba(30, 33, 44, 0.1), 0px 12px 10px -6px rgba(30, 33, 44, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+        border-radius: 4px;
+        padding: 28px 28px 48px 48px;
+        height: 781px;
+        width: 486px;
+
+        &__title-1 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 150%;
+            text-align: center;
+            padding-bottom: 20px;
+            /* gray/900 */
+
+            color: #1E212C;
+        }
+
+        &__close-1 {
+            cursor: pointer;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
+
+// ************************ Кнопка вызова модального окна ************************ //
+.modal__btn-1 {
+
+    cursor: pointer;
+}
+
+.form {
+
+    // .form__label
+
+    &__label {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+
+        color: #424551;
+    }
+
+    // .form__inp
+
+    &__inp {
+        margin-top: 8px;
+        padding-top: 11px;
+        padding-bottom: 12px;
+        padding-left: 16px;
+        width: 390px;
+        background: #F4F5F7;
+        /* gray/400 */
+        margin-bottom: 20px;
+        border: 1px solid #D7DADD;
+        border-radius: 4px;
+    
+    }
+}
+
+.btn-send {
+    background: #FF5A30;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 44px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    color: #FFFFFF;
+    width: 390px;
+    &--1{
+        margin-top: -10px;
+    }
+}
+.file-form{
+    display: none;
+}
+.file{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

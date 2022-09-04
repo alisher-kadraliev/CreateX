@@ -1884,6 +1884,13 @@ footer {
   background-image: url(../img/service-hero4.png);
 }
 
+.section__main-hero--hero {
+  background-repeat: no-repeat;
+  background-position: right;
+  z-index: 111;
+  background-image: url(../img/after.png);
+}
+
 .main-hero__Homepage {
   font-style: normal;
   font-weight: 400;
@@ -3119,6 +3126,176 @@ footer {
   -webkit-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   transition: 0.3s ease;
+}
+
+.modal__wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+  display: none;
+}
+
+.modal__wrapper .modal {
+  background: #FFFFFF;
+  /* gray/300 */
+  border: 1px solid #E5E8ED;
+  /* shadow/large */
+  -webkit-box-shadow: 0px 60px 80px -20px rgba(30, 33, 44, 0.16), 0px 26px 24px -10px rgba(30, 33, 44, 0.1), 0px 12px 10px -6px rgba(30, 33, 44, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+          box-shadow: 0px 60px 80px -20px rgba(30, 33, 44, 0.16), 0px 26px 24px -10px rgba(30, 33, 44, 0.1), 0px 12px 10px -6px rgba(30, 33, 44, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+  border-radius: 4px;
+  padding: 28px 28px 48px 48px;
+  height: 412px;
+  width: 486px;
+}
+
+.modal__wrapper .modal__title {
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  /* identical to box height, or 42px */
+  /* gray/900 */
+  padding-bottom: 24px;
+  color: #1E212C;
+}
+
+.modal__wrapper .modal__close {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.modal__btn {
+  cursor: pointer;
+}
+
+.modal__wrapper-1 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+  display: none;
+}
+
+.modal__wrapper-1 .modal-1 {
+  background: #FFFFFF;
+  /* gray/300 */
+  border: 1px solid #E5E8ED;
+  /* shadow/large */
+  -webkit-box-shadow: 0px 60px 80px -20px rgba(30, 33, 44, 0.16), 0px 26px 24px -10px rgba(30, 33, 44, 0.1), 0px 12px 10px -6px rgba(30, 33, 44, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+          box-shadow: 0px 60px 80px -20px rgba(30, 33, 44, 0.16), 0px 26px 24px -10px rgba(30, 33, 44, 0.1), 0px 12px 10px -6px rgba(30, 33, 44, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+  border-radius: 4px;
+  padding: 28px 28px 48px 48px;
+  height: 781px;
+  width: 486px;
+}
+
+.modal__wrapper-1 .modal-1__title-1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  text-align: center;
+  padding-bottom: 20px;
+  /* gray/900 */
+  color: #1E212C;
+}
+
+.modal__wrapper-1 .modal-1__close-1 {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.modal__btn-1 {
+  cursor: pointer;
+}
+
+.form__label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #424551;
+}
+
+.form__inp {
+  margin-top: 8px;
+  padding-top: 11px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  width: 390px;
+  background: #F4F5F7;
+  /* gray/400 */
+  margin-bottom: 20px;
+  border: 1px solid #D7DADD;
+  border-radius: 4px;
+}
+
+.btn-send {
+  background: #FF5A30;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 44px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  color: #FFFFFF;
+  width: 390px;
+}
+
+.btn-send--1 {
+  margin-top: -10px;
+}
+
+.file-form {
+  display: none;
+}
+
+.file {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
 }
 
 @media (max-width: 1199.98px) {
