@@ -61,10 +61,10 @@ $(document).ready(function () {
         slidesToShow: 3,
         slidesToScroll: 2,
     });
-    $(".clients__swiper").slick({
-        arrows: true,
+    // $(".clients__swiper").slick({
+    //     arrows: true,
 
-    });
+    // });
 });
 
 // Аккордеон
@@ -137,7 +137,7 @@ $(document).ready(function () {
         focusOnSelect: true
     });
 });
-
+//slide for work
 $(document).ready(function () {
     $('.history').slick({
         infinite: true,
