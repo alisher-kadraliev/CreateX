@@ -56,16 +56,16 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 //slide
-$(document).ready(function () {
-    $(".slider").slick({
-        slidesToShow: 3,
-        slidesToScroll: 2,
-    });
-    // $(".clients__swiper").slick({
-    //     arrows: true,
+// $(document).ready(function () {
+//     $(".slider").slick({
+//         slidesToShow: 3,
+//         slidesToScroll: 2,
+//     });
+//     // $(".clients__swiper").slick({
+//     //     arrows: true,
 
-    // });
-});
+//     // });
+// });
 
 // Аккордеон
 function accordion() {
@@ -117,34 +117,34 @@ $(document).ready(function () {
 
 })
 
+// //slide for work
+// $(document).ready(function () {
+//     $('.slider-for').slick({
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//         arrows: true,
+//         autoplay: true,
+//         autoplaySpeed: 2000,
+//         fade: true,
+//         asNavFor: '.slider-nav'
+//     });
+//     $('.slider-nav').slick({
+//         slidesToShow: 5,
+//         arrows: false,
+//         asNavFor: '.slider-for',
+//         infinite: true,
+//         draggable: false,
+//         focusOnSelect: true
+//     });
+// });
 //slide for work
-$(document).ready(function () {
-    $('.slider-for').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        fade: true,
-        asNavFor: '.slider-nav'
-    });
-    $('.slider-nav').slick({
-        slidesToShow: 5,
-        arrows: false,
-        asNavFor: '.slider-for',
-        infinite: true,
-        draggable: false,
-        focusOnSelect: true
-    });
-});
-//slide for work
-$(document).ready(function () {
-    $('.history').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3
-    });
-});
+// $(document).ready(function () {
+//     $('.history').slick({
+//         infinite: true,
+//         slidesToShow: 3,
+//         slidesToScroll: 3
+//     });
+// });
 
 // Модальное окно
 function bindModal(trigger, modal, close) {
@@ -176,3 +176,43 @@ function bindModal(trigger, modal, close) {
 // ТРЕТИЙ аргумент - класс кнопки, при клике на которую будет закрываться модальное окно.
 bindModal('.modal__btn', '.modal__wrapper', '.modal__close')
 bindModal('.modal__btn-1', '.modal__wrapper-1', '.modal-1__close-1')
+
+
+//tabs
+function tabs(headerSelector, tabSelector, contentSelector, activeClass, display = 'flex') {
+    const header = document.querySelector(headerSelector),
+        tab = document.querySelectorAll(tabSelector),
+        content = document.querySelectorAll(contentSelector)
+    function hideTabContent() {
+        content.forEach(item => {
+            item.style.display = 'none'
+        });
+        tab.forEach(item => {
+            item.classList.remove(activeClass)
+        });
+    }
+    function showTabContent(i = 0) {
+        content[i].style.display = display
+        tab[i].classList.add(activeClass)
+    }
+    hideTabContent()
+    showTabContent()
+    header.addEventListener('click', e => {
+        const target = e.target
+        if (target.classList.contains(tabSelector.replace(/\./, '')) ||
+            target.parentNode.classList.contains(tabSelector.replace(/\./, ''))) {
+            tab.forEach((item, i) => {
+                if (target == item || target.parentNode == item) {
+                    hideTabContent()
+                    showTabContent(i)
+                }
+            });
+        }
+    })
+}
+
+// ПЕРВЫЙ аргумент - класс всего нашего хедера табов.
+// ВТОРОЙ аргумент - класс конкретного элемента, при клике на который будет переключатся таб.
+// ТРЕТИЙ аргумент - класс того блока, который будет переключаться.
+// ЧЕТВЕРТЫЙ аргумент - класс активности, который будет добавлятся для таба, который сейчас активен.
+tabs('.tabs__header', '.tabs__header-item', '.tabs__content-item', 'active')

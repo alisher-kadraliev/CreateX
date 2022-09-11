@@ -128,6 +128,11 @@ body {
 
     }
 
+    &__news {
+        background: linear-gradient(90deg, #F4F5F6 0%, rgba(244, 245, 246, 0.86) 11.48%, rgba(244, 245, 246, 0) 41.15%);
+        opacity: 1;
+    }
+
     &--1 {
         opacity: 0.3;
         transform: matrix(-1, 0, 0, 1, 0, 0);
