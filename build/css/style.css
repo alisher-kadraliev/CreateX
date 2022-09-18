@@ -958,11 +958,12 @@ body.locked {
 
 .section__project {
   padding: 120px 0;
+  min-width: 0;
 }
 
 .project {
-  min-width: 0;
   position: relative;
+  min-width: 0;
 }
 
 .project__item {
