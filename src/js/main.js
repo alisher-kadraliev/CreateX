@@ -1,4 +1,5 @@
 // Custom scripts
+
 // Мобильное меню бургер
 function burgerMenu() {
     const burger = document.querySelector('.burger')
@@ -61,10 +62,10 @@ $(document).ready(function () {
         slidesToShow: 3,
         slidesToScroll: 2,
     });
-    // $(".clients__swiper").slick({
-    //     arrows: true,
+    $(".clients__swiper").slick({
+        arrows: true,
 
-    // });
+    });
 });
 
 // Аккордеон
@@ -118,101 +119,164 @@ $(document).ready(function () {
 })
 
 // //slide for work
-// $(document).ready(function () {
-//     $('.slider-for').slick({
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-//         arrows: true,
-//         autoplay: true,
-//         autoplaySpeed: 2000,
-//         fade: true,
-//         asNavFor: '.slider-nav'
-//     });
-//     $('.slider-nav').slick({
-//         slidesToShow: 5,
-//         arrows: false,
-//         asNavFor: '.slider-for',
-//         infinite: true,
-//         draggable: false,
-//         focusOnSelect: true
-//     });
-// });
-//slide for work
-// $(document).ready(function () {
-//     $('.history').slick({
-//         infinite: true,
-//         slidesToShow: 3,
-//         slidesToScroll: 3
-//     });
-// });
-
-// Модальное окно
-function bindModal(trigger, modal, close) {
-    trigger = document.querySelector(trigger),
-        modal = document.querySelector(modal),
-        close = document.querySelector(close)
-
-    const body = document.body
-
-    trigger.addEventListener('click', e => {
-        e.preventDefault()
-        modal.style.display = 'flex'
-        body.classList.add('locked')
+$(document).ready(function () {
+    $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        fade: true,
+        asNavFor: '.slider-nav'
     });
-    close.addEventListener('click', () => {
-        modal.style.display = 'none'
-        body.classList.remove('locked')
+    $('.slider-nav').slick({
+        slidesToShow: 5,
+        arrows: false,
+        asNavFor: '.slider-for',
+        infinite: true,
+        draggable: false,
+        focusOnSelect: true
     });
-    modal.addEventListener('click', e => {
-        if (e.target === modal) {
-            modal.style.display = 'none'
-            body.classList.remove('locked')
+});
+
+
+
+$(document).ready(function () {
+    $('.history').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+    });
+});
+
+
+
+
+//new filter
+const list = document.querySelector('.list'),
+    items = document.querySelectorAll('.blocks__item')
+listItems = document.querySelectorAll('.list__item')
+
+function filter() {
+    list.addEventListener('click', event => {
+        const targetId = event.target.dataset.id
+        const target = event.target
+
+        if (target.classList.contains('list__item')) {
+            listItems.forEach(listItem => listItem.classList.remove('active'))
+            target.classList.add('active')
+        }
+
+
+        switch (targetId) {
+            case 'all':
+                getItems('blocks__item')
+                break
+            case 'Company':
+                getItems(targetId)
+                break
+            case 'Innovation':
+                getItems(targetId)
+                break
+            case 'Industry':
+                getItems(targetId)
+                break
+            case 'Expert':
+                getItems(targetId)
+                break
+            case 'Marketing':
+                getItems(targetId)
+                break
         }
     })
 }
+filter()
 
-// ПЕРВЫЙ аргумент - класс кнопки, при клике на которую будет открываться модальное окно.
-// ВТОРОЙ аргумент - класс самого модального окна.
-// ТРЕТИЙ аргумент - класс кнопки, при клике на которую будет закрываться модальное окно.
-bindModal('.modal__btn', '.modal__wrapper', '.modal__close')
-bindModal('.modal__btn-1', '.modal__wrapper-1', '.modal-1__close-1')
-
-
-//tabs
-function tabs(headerSelector, tabSelector, contentSelector, activeClass, display = 'flex') {
-    const header = document.querySelector(headerSelector),
-        tab = document.querySelectorAll(tabSelector),
-        content = document.querySelectorAll(contentSelector)
-    function hideTabContent() {
-        content.forEach(item => {
+function getItems(className) {
+    items.forEach(item => {
+        if (item.classList.contains(className)) {
+            item.style.display = 'block'
+        } else {
             item.style.display = 'none'
-        });
-        tab.forEach(item => {
-            item.classList.remove(activeClass)
-        });
-    }
-    function showTabContent(i = 0) {
-        content[i].style.display = display
-        tab[i].classList.add(activeClass)
-    }
-    hideTabContent()
-    showTabContent()
-    header.addEventListener('click', e => {
-        const target = e.target
-        if (target.classList.contains(tabSelector.replace(/\./, '')) ||
-            target.parentNode.classList.contains(tabSelector.replace(/\./, ''))) {
-            tab.forEach((item, i) => {
-                if (target == item || target.parentNode == item) {
-                    hideTabContent()
-                    showTabContent(i)
-                }
-            });
         }
     })
 }
 
-// ПЕРВЫЙ аргумент - класс всего нашего хедера табов.
-// ВТОРОЙ аргумент - класс конкретного элемента, при клике на который будет переключатся таб.
-// ТРЕТИЙ аргумент - класс того блока, который будет переключаться.
-// ЧЕТВЕРТЫЙ аргумент - класс активности, который будет добавлятся для таба, который сейчас активен.
-tabs('.tabs__header', '.tabs__header-item', '.tabs__content-item', 'active')
+const list_items = [
+    "Item 1",
+    "Item 2",
+    "Item 3",
+    "Item 4",
+    "Item 5",
+    "Item 6",
+    "Item 7",
+    "Item 8",
+    "Item 9",
+    "Item 10",
+    "Item 11",
+    "Item 12",
+    "Item 13",
+    "Item 14",
+    "Item 15",
+    "Item 16",
+    "Item 17",
+    "Item 18",
+    "Item 19",
+    "Item 20",
+];
+const list_element = document.getElementById('list');
+const pagination_element = document.getElementById('pagination');
+
+let current_page = 1;
+let rows = 5;
+
+function DisplayList(items, wrapper, rows_per_page, page) {
+    wrapper.innerHtml = "";
+    page--;
+
+    let start = rows_per_page * page;
+    let end = start + rows_per_page;
+    let paginatedItem = items.slice(start, end);
+
+    for (let i = 0; i < paginatedItem.length; i++) {
+        let item = paginatedItem[i];
+
+        let item_element = document.createElement('div');
+        item_element.classList.add('item');
+        item_element.innerText = item;
+
+        wrapper.appendChild(item_element);
+    }
+}
+
+function SetupPagination(items, wrapper, rows_per_page) {
+    wrapper.innerHtml = "";
+
+    let page_count = Math.ceil(items.length / rows_per_page);
+    for (let i = 1; i < page_count + 1; i++) {
+        let btn = PaginationButton(i, items);
+        wrapper.appendChild(btn);
+    }
+}
+
+function PaginationButton(page, items) {
+    let button = document.createElement('button');
+    button.innerText = page;
+
+    if (current_page == page) button.classList.add('active');
+
+
+    button.addEventListener('click', function () {
+        current_page = page;
+        DisplayList(items, list_element, rows, current_page)
+
+        current_btn = document.querySelector('.pagenumbers button.active');
+        current_btn.classList.remove('active');
+
+        button.classList.add('active');
+    });
+    return button;
+}
+
+DisplayList(list_items, list_element, rows, current_page);
+SetupPagination(list_items, pagination_element, rows);
