@@ -7,9 +7,10 @@
 
     &__our {
         padding: 180px 0;
-        &--gray{
+
+        &--gray {
             background: #F4F5F7;
-            padding: 80px 0 180px 0; 
+            padding: 80px 0 180px 0;
         }
     }
 }
@@ -167,6 +168,8 @@
         border: 1px solid #D7DADD;
         border-radius: 4px;
 
+        &--1 {
+        }
     }
 
     &__input-1 {
@@ -198,14 +201,17 @@
         color: #fff;
         padding-top: 80px;
     }
-    &__text{
+
+    &__text {
         color: #fff;
         opacity: 0.6;
     }
-    &__title-2{
+
+    &__title-2 {
         color: #fff;
     }
-    &__btn{
+
+    &__btn {
         display: flex;
         margin: 0 auto;
         transform: translateY(20px);

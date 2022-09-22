@@ -5,8 +5,14 @@
     &__hero-work {
         padding-top: 93px;
         padding-bottom: 100px;
+
         background: url("../img/bg-imagework.png") 1214px 0 /40% no-repeat;
+
+        &--SinglePost {
+            background: #F4F5F7;
+        }
     }
+
 }
 
 .container {}
