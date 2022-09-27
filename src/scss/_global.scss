@@ -118,6 +118,11 @@ body {
     opacity: 0.4;
     right: 0px;
 
+    &__contacts {
+        opacity: 1;
+        width: 51%;
+    }
+
     &__portfolio {
         top: 0px;
         max-width: 100%;
