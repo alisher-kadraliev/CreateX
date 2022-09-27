@@ -1,0 +1,53 @@
+.section {
+
+    // .section__history
+
+    &__history {}
+}
+
+
+.history {
+    min-width: 0;
+    // .history__title
+
+    &__title {}
+
+    // .history__item
+
+    &__item {}
+
+    // .history__subtext
+
+    &__subtext {}
+
+    // .history__text
+
+    &__text {}
+}
+
+.history-main {
+    display: flex;
+    flex-direction: row;
+}
+
+.history-text {
+
+    &__item {}
+}
+
+.history .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+// .history-text .slick-dots li{
+// display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
+// .history-text .slick-dots button{
+
+// }

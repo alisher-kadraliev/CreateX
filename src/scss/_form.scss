@@ -24,7 +24,10 @@
         /* identical to box height, or 21px */
         padding-top: 20px;
         color: #424551;
-        
+
+        &--1 {
+            padding: 0;
+        }
     }
 
     // .form__item
@@ -49,12 +52,20 @@
         &:hover {
             background: $primary-hover;
         }
+
+        &--1 {
+            margin-top: 40px;
+        }
     }
 
     &__form {
         padding: 24px;
         display: flex;
         flex-direction: column;
+
+        &--1 {
+            padding: 0;
+        }
     }
 
     &__item-li {
@@ -74,6 +85,12 @@
     &__title {
         padding-top: 48px;
         padding-bottom: 0;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 150%;
+        color: #1E212C;
+        text-align: center;
     }
 }
 
@@ -83,8 +100,23 @@
 
 .checkbox-form {
     padding-top: 20px;
+
+    &--1 {
+        padding-top: 40px;
+        width: 315px;
+    }
 }
 
 .check-label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    /* or 26px */
+
+
+    /* gray/800 */
+
+    color: #424551;
     padding-left: 5px;
 }
