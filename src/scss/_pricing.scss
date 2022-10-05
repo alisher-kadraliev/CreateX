@@ -1,114 +1,143 @@
-.section {
+.pricing {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    background-color: #f4f5f7;
 
-    // .section__pricing
+    &__decorate {
+        position: absolute;
+        left: -8px;
+        top: 0;
+    }
 
-    &__pricing {
-        background: #F4F5F7;
-        padding-top: 80px;
+    &__descr {
+        margin-bottom: 60px;
     }
 }
 
-.container {}
+.table-wrapper {
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+    border: 1px solid #e5e8ed;
+    border-collapse: collapse;
+    border-radius: 4px;
+    width: 100%;
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    border-radius: 4px;
+    background: #FFFFFF;
 
-.pricing {
 
-    // .pricing__title
+}
 
-    &__title {}
+.table {
+    border-collapse: collapse;
+    width: 100%;
 
-    // .pricing__text
-
-    &__text {}
-
-    // .pricing__item
-
-    &__item {
-        background: #FFFFFF;
-        /* gray/300 */
-
-        border: 1px solid #E5E8ED;
-        /* shadow/small */
-
-        box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
-        border-radius: 4px;
-    }
-
-    // .pricing__tr
-
-    &__tr {}
-
-    // .pricing__th
-
-    &__th {
-        font-style: normal;
+    &__heading {
+        margin-bottom: 2px;
         font-weight: 700;
-        font-size: 18px;
+        font-size: 24px;
         line-height: 150%;
-        /* identical to box height, or 27px */
-
-
-        /* gray/900 */
-
+        text-align: center;
+        text-transform: uppercase;
         color: #1E212C;
     }
 
-    // .pricing__grup
-
-    &__grup {display: flex;flex-direction: column;}
-
-    // .pricing__subtitle
-
-    &__subtitle {}
-
-    // .pricing__td
-
-    &__td {
-
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 160%;
-        /* identical to box height, or 26px */
-
-
-        /* gray/800 */
-
-        color: #424551;
-    }
-
-    // .pricing__day
-
-    &__day {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 160%;
-        /* identical to box height, or 26px */
-
+    &__per {
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 150%;
         text-align: center;
+        color: #787A80;
+    }
 
-        /* gray/800 */
+    &__th {
+        padding-top: 31px;
+        padding-right: 20px;
+        padding-bottom: 24px;
 
+        &:first-child {
+            vertical-align: bottom;
+            padding-left: 24px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 150%;
+            text-align: left;
+            color: #787A80;
+        }
+    }
+
+    &__body {
+        .table__row {
+            &:nth-child(odd) {
+                background-color: #f4f5f7;
+            }
+
+            &:last-child {
+                .table__col {
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                }
+            }
+        }
+    }
+
+    &__col {
+        vertical-align: middle;
+        padding: 16px 0;
+        padding-right: 10px;
+        font-size: 16px;
+        line-height: 160%;
+        text-align: center;
+        color: #424551;
+
+        .btn {
+            padding: 0 20px;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 36px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+
+            &:focus {
+                outline: 2px solid $primary;
+                outline-offset: 2px;
+            }
+
+
+        }
+
+        &:first-child {
+            padding-left: 24px;
+            text-align: left;
+        }
+    }
+
+    &__check {
+        display: inline-block;
+        vertical-align: middle;
+        width: 24px;
+        height: 24px;
+        font-size: 0;
+        background-image: url("../img/table-check.svg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 160%;
+        text-align: center;
         color: #424551;
     }
 
-    // .pricing__btn
 
-    &__btn {
-        color: $primary;
-        border: 1px solid $primary;
-    }
 }
 
-.btn-outline {}
-
-.td-main {
-
-    &--1 {}
-
-    padding: 16px 465px 16px 24px;
-}
-
-.td-main--1 {
-    background: #F4F5F7;
+.pricing__btn {
+    border: 1px solid #FF5A30;
+    border-radius: 4px;
+    padding: 0 24px;
 }
