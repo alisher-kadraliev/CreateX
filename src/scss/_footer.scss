@@ -14,6 +14,11 @@ footer {
     gap: 60px;
     color: #fff;
 
+    @media(max-width: $breakpoint768) {
+        padding: 40px 0;
+        gap: 30px;
+    }
+
     &__items {
         display: flex;
         flex-direction: column;
@@ -24,6 +29,17 @@ footer {
     &__list {
         display: flex;
         gap: 242px;
+
+        @media(max-width: $breakpoint992) {
+            justify-content: space-between;
+            gap: 60px;
+        }
+
+        @media(max-width: $breakpoint768) {
+            flex-wrap: wrap;
+            align-items: center;    
+            justify-content: center;
+        }
     }
 
     // .footer__item
@@ -36,6 +52,11 @@ footer {
         display: flex;
         gap: 80px;
         padding-bottom: 24px;
+        @media(max-width: $breakpoint768) {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
     }
 
     // .footer__socials
@@ -63,6 +84,11 @@ footer {
         color: #FFFFFF;
 
         opacity: 0.6;
+        @media(max-width: $breakpoint768) {
+        text-align: center;
+        
+        }
+    
     }
 
     // .footer__title
@@ -79,19 +105,24 @@ footer {
         /* white */
 
         color: #FFFFFF;
+        @media(max-width: $breakpoint768) {
+        text-align: center;
+        }
     }
 
     // .footer__form
 
     &__form {
         display: flex;
+        @media(max-width: $breakpoint768) {
+        justify-content: center;
+        }
     }
 
     &__input {
         background: rgba(255, 255, 255, 0.12);
         border: 1px solid rgba(255, 255, 255, 0.2);
         border-radius: 4px;
-        padding-right: 228px;
         color: $primary;
 
         &::placeholder {
@@ -138,6 +169,13 @@ footer {
     &__list-2 {
         display: flex;
         gap: 125px;
+        @media(max-width: $breakpoint992) {
+        gap: 80px;
+        }
+        @media(max-width: $breakpoint768) {
+        flex-wrap: wrap;
+        gap: 50px;
+        }
     }
 
     // .footer__item-2

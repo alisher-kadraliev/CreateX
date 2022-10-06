@@ -120,7 +120,6 @@ body.locked {
   text-align: center;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  padding: 0px 40px;
   /* white */
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
@@ -958,6 +957,11 @@ body.locked {
 .our-2__title {
   color: #fff;
   padding-top: 80px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 130%;
+  color: #FFFFFF;
 }
 
 .our-2__text {
@@ -1821,7 +1825,6 @@ footer {
   background: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 4px;
-  padding-right: 228px;
   color: #FF5A30;
 }
 
@@ -5023,6 +5026,17 @@ button.swiper-pagination-bullet {
     max-width: 970px;
   }
 
+  .btn-outline {
+    font-size: 12px;
+    line-height: 42px;
+  }
+
+  .bg-hero {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+
   .info {
     display: none;
   }
@@ -5048,6 +5062,99 @@ button.swiper-pagination-bullet {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+
+  .clients__title {
+    font-size: 36px;
+    line-height: 100%;
+  }
+
+  .footer__list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 60px;
+  }
+
+  .footer__list-2 {
+    gap: 80px;
+  }
+
+  .main-hero__title {
+    font-size: 52px;
+    line-height: 90%;
+  }
+
+  .main-hero__text {
+    font-size: 15px;
+    line-height: 120%;
+  }
+
+  .section__main-about {
+    padding-top: 80px;
+    padding-bottom: 150px;
+  }
+
+  .main-about__list {
+    gap: 80px;
+  }
+
+  .main-about__item {
+    gap: 40px;
+  }
+
+  .main-about__img {
+    max-width: 80%;
+    width: 100%;
+    height: auto;
+    z-index: 111;
+  }
+
+  .about-item__title {
+    font-size: 28px;
+    line-height: 120%;
+  }
+
+  .about-item__text {
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .about-item {
+    font-size: 12px;
+    line-height: 34px;
+  }
+
+  .accordion .accordion__item .accordion__item-trigger .trigger__text {
+    font-size: 18px;
+    line-height: 120%;
+  }
+
+  .process__title {
+    font-size: 36px;
+    line-height: 100%;
+  }
+
+  .process__item {
+    max-width: 170px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .line-2 {
+    display: none;
+  }
+
+  .line-3 {
+    display: none;
+  }
+
+  .pricing__decorate {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -5186,6 +5293,175 @@ button.swiper-pagination-bullet {
   .container {
     max-width: 740px;
   }
+
+  .btn-outline--price {
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .our {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+  }
+
+  .our-2__title {
+    padding-top: 40px;
+    font-size: 36px;
+    line-height: 100%;
+  }
+
+  .clients__title {
+    font-size: 28px;
+    line-height: 80%;
+  }
+
+  .clients__sup {
+    padding-bottom: 100px;
+    padding-top: 40px;
+    gap: 30px;
+  }
+
+  .footer {
+    padding: 40px 0;
+    gap: 30px;
+  }
+
+  .footer__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .footer__social {
+    gap: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .footer__text {
+    text-align: center;
+  }
+
+  .footer__title {
+    text-align: center;
+  }
+
+  .footer__form {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .footer__list-2 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  .section__main-hero {
+    padding-bottom: 110px;
+    padding-top: 40px;
+  }
+
+  .main-hero__Homepage {
+    font-size: 12px;
+    line-height: 120%;
+  }
+
+  .main-hero__Services {
+    font-size: 12px;
+    line-height: 120%;
+  }
+
+  .main-hero__İnterior {
+    font-size: 12px;
+    line-height: 120%;
+  }
+
+  .main-hero__title {
+    font-size: 32px;
+  }
+
+  .main-hero__text {
+    font-size: 12px;
+    line-height: 90%;
+  }
+
+  .section__main-about {
+    padding-top: 60px;
+    padding-bottom: 130px;
+  }
+
+  .main-about__list {
+    gap: 50px;
+  }
+
+  .main-about__item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .main-about__img {
+    max-width: 100%;
+  }
+
+  .about-item__title {
+    font-size: 26px;
+    line-height: 110%;
+  }
+
+  .about-item__text {
+    font-size: 12px;
+    line-height: 120%;
+    padding-top: 18px;
+    padding-bottom: 23px;
+  }
+
+  .section__process {
+    padding-bottom: 60px;
+  }
+
+  .section__process {
+    display: none;
+  }
+
+  .table__heading {
+    font-size: 17px;
+    line-height: 120%;
+  }
+
+  .table__per {
+    font-size: 14px;
+    line-height: 120%;
+  }
+
+  .table__th {
+    font-size: 14px;
+    line-height: 100%;
+    padding-left: 12px;
+  }
+
+  .table__col {
+    font-size: 14px;
+    line-height: 90%;
+  }
 }
 
 @media (max-width: 479.98px) {
@@ -5195,5 +5471,73 @@ button.swiper-pagination-bullet {
 
   .tell {
     margin-right: 40px;
+  }
+
+  .clients__sup {
+    padding-bottom: 50px;
+    padding-top: 20px;
+  }
+
+  .section__main-hero {
+    padding-bottom: 50px;
+    padding-top: 20px;
+  }
+
+  .main-hero__Homepage {
+    font-size: 10px;
+    line-height: 90%;
+  }
+
+  .main-hero__Services {
+    font-size: 10px;
+    line-height: 90%;
+  }
+
+  .main-hero__İnterior {
+    font-size: 10px;
+    line-height: 90%;
+  }
+
+  .section__main-about {
+    padding-top: 40px;
+    padding-bottom: 90px;
+  }
+
+  .main-about__list {
+    gap: 30px;
+  }
+
+  .about-item__title {
+    font-size: 24px;
+    line-height: 90%;
+  }
+
+  .about-item__text {
+    font-size: 10px;
+    line-height: 90%;
+  }
+
+  .table__heading {
+    font-size: 13px;
+    line-height: 90%;
+  }
+
+  .table__per {
+    font-size: 12px;
+    line-height: 90%;
+  }
+
+  .table__th:first-child {
+    padding-left: 2px;
+  }
+
+  .table__col {
+    font-size: 12px;
+    line-height: 70%;
+    padding-right: 0;
+  }
+
+  .table__col:first-child {
+    padding-left: 2px;
   }
 }

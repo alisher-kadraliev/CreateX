@@ -50,6 +50,17 @@
         /* gray/900 */
 
         color: #1E212C;
+
+        @media(max-width: $breakpoint992) {
+            font-size: 36px;
+            line-height: 100%;
+
+        }
+
+        @media(max-width: $breakpoint768) {
+            font-size: 28px;
+            line-height: 80%;
+        }
     }
 
     // .clients__sup
@@ -61,6 +72,18 @@
         gap: 60px;
         padding-top: 60px;
         padding-bottom: 170px;
+
+        @media(max-width: $breakpoint768) {
+            padding-bottom: 100px;
+            padding-top: 40px;
+            gap: 30px;
+
+        }
+
+        @media(max-width: $breakpoint480) {
+            padding-bottom: 50px;
+            padding-top: 20px;
+        }
     }
 
     // .clients__link
@@ -203,10 +226,11 @@
 
     &__fer {
         display: flex;
-       gap: 16px;
-       &:not(:last-child){
-        padding-bottom: 20px;
-       }
+        gap: 16px;
+
+        &:not(:last-child) {
+            padding-bottom: 20px;
+        }
     }
 
     // .clients__subtext

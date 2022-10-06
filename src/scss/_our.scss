@@ -51,6 +51,15 @@
     display: flex;
     justify-content: space-between;
 
+    @media(max-width: $breakpoint768) {
+        padding-top: 40px;
+        padding-bottom: 60px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
     &__1 {
         padding-bottom: 0;
     }
@@ -62,6 +71,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+
     }
 
     // .our__icon
@@ -204,6 +214,18 @@
     &__title {
         color: #fff;
         padding-top: 80px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 46px;
+        line-height: 130%;
+
+        color: #FFFFFF;
+
+        @media(max-width: $breakpoint768) {
+            padding-top: 40px;
+            font-size: 36px;
+            line-height: 100%;
+        }
     }
 
     &__text {
@@ -228,8 +250,8 @@
     font-size: 14px;
     line-height: 44px;
     /* identical to box height, or 314% */
-margin: 0 auto;
-margin-top: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -240,5 +262,5 @@ margin-top: 20px;
     background: #FF5A30;
     border-radius: 4px;
     color: #FFFFFF;
-    
+
 }

@@ -56,7 +56,6 @@ body {
     text-align: center;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    padding: 0px 40px;
     /* white */
     transition: .3s ease-in-out;
     color: #FFFFFF;
@@ -109,6 +108,16 @@ body {
         /* primary */
 
         color: #FF5A30;
+
+        @media(max-width: $breakpoint768) {
+            font-size: 10px;
+            line-height: 16px;
+        }
+    }
+
+    @media(max-width: $breakpoint992) {
+        font-size: 12px;
+        line-height: 42px;
     }
 }
 
@@ -159,5 +168,11 @@ body {
     &--1 {
         opacity: 0.3;
         transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+
+    @media(max-width: $breakpoint992) {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
     }
 }
