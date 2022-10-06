@@ -4,6 +4,14 @@
 
     &__process {
         padding-bottom: 120px;
+
+        @media(max-width: $breakpoint768) {
+            padding-bottom: 60px;
+        }
+
+        @media(max-width: $breakpoint768) {
+            display: none;
+        }
     }
 }
 
@@ -24,6 +32,11 @@
         /* gray/900 */
         padding-bottom: 60px;
         color: #1E212C;
+
+        @media(max-width: $breakpoint992) {
+            font-size: 36px;
+            line-height: 100%;
+        }
     }
 
     // .process__list
@@ -38,6 +51,9 @@
     &__item {
         max-width: 285px;
 
+        @media(max-width: $breakpoint992) {
+            max-width: 170px;
+        }
     }
 
     // .process__img
@@ -62,8 +78,8 @@
 
         color: #1E212C;
 
-        &--1{
-            padding-top:50px;
+        &--1 {
+            padding-top: 50px;
         }
     }
 
@@ -126,14 +142,26 @@
 .line {
     padding-top: 15px;
     padding-left: 23px;
+
+    @media(max-width: $breakpoint992) {
+        display: none;
+    }
 }
 
 .line-2 {
     padding-top: 15px;
     padding-left: 20px;
+
+    @media(max-width: $breakpoint992) {
+        display: none;
+    }
 }
 
 .line-3 {
     padding-top: 17px;
     padding-left: 80px;
+
+    @media(max-width: $breakpoint992) {
+        display: none;
+    }
 }

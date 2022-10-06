@@ -8,8 +8,18 @@
         padding-bottom: 179px;
         padding-top: 80px;
 
+        @media(max-width: $breakpoint768) {
+            padding-bottom: 110px;
+            padding-top: 40px;
+        }
+
+        @media(max-width: $breakpoint480) {
+            padding-bottom: 50px;
+            padding-top: 20px;
+        }
+
         &--news {
-            
+
             padding-bottom: 233px;
         }
 
@@ -51,6 +61,15 @@
         line-height: 150%;
         color: #424551;
 
+        @media(max-width: $breakpoint768) {
+            font-size: 12px;
+            line-height: 120%;
+        }
+
+        @media(max-width: $breakpoint480) {
+            font-size: 10px;
+            line-height: 90%;
+        }
     }
 
 
@@ -80,6 +99,16 @@
 
             color: #9A9CA5;
         }
+
+        @media(max-width: $breakpoint768) {
+            font-size: 12px;
+            line-height: 120%;
+        }
+
+        @media(max-width: $breakpoint480) {
+            font-size: 10px;
+            line-height: 90%;
+        }
     }
 
     &__İnterior {
@@ -92,6 +121,16 @@
 
         /* gray/600 */
         color: #9A9CA5;
+
+        @media(max-width: $breakpoint768) {
+            font-size: 12px;
+            line-height: 120%;
+        }
+
+        @media(max-width: $breakpoint480) {
+            font-size: 10px;
+            line-height: 90%;
+        }
     }
 
     // .main-hero__title
@@ -106,6 +145,16 @@
         padding-bottom: 24px;
         padding-top: 40px;
         color: #1E212C;
+
+        @media(max-width: $breakpoint992) {
+            font-size: 52px;
+            line-height: 90%;
+        }
+
+        @media(max-width: $breakpoint768) {
+            font-size: 32px;
+        }
+
     }
 
     // .main-hero__text
@@ -118,6 +167,16 @@
         line-height: 150%;
         color: #787A80;
         max-width: 600px;
+
+        @media(max-width: $breakpoint992) {
+            font-size: 15px;
+            line-height: 120%;
+        }
+
+        @media(max-width: $breakpoint768) {
+            font-size: 12px;
+            line-height: 90%;
+        }
     }
 
     // .main-hero__item-right

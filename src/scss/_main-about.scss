@@ -5,6 +5,22 @@
     &__main-about {
         padding-top: 120px;
         padding-bottom: 180px;
+
+        @media(max-width: $breakpoint992) {
+            padding-top: 80px;
+            padding-bottom: 150px;
+        }
+
+        @media(max-width: $breakpoint768) {
+            padding-top: 60px;
+            padding-bottom: 130px;
+
+        }
+
+        @media(max-width: $breakpoint480) {
+            padding-top: 40px;
+            padding-bottom: 90px;
+        }
     }
 }
 
@@ -18,6 +34,19 @@
         display: flex;
         flex-direction: column;
         gap: 120px;
+
+        @media(max-width: $breakpoint992) {
+            gap: 80px;
+
+        }
+
+        @media(max-width: $breakpoint768) {
+            gap: 50px;
+        }
+
+        @media(max-width: $breakpoint480) {
+            gap: 30px;
+        }
     }
 
     // .main-about__item
@@ -27,11 +56,30 @@
         gap: 80px;
         align-items: center;
         justify-content: center;
+
+        @media(max-width: $breakpoint992) {
+            gap: 40px;
+        }
+
+        @media(max-width: $breakpoint768) {
+            flex-wrap: wrap;
+        }
     }
 
     // .main-about__img
 
-    &__img {}
+    &__img {
+        @media(max-width: $breakpoint992) {
+            max-width: 80%;
+            width: 100%;
+            height: auto;
+            z-index: 111;
+        }
+
+        @media(max-width: $breakpoint768) {
+            max-width: 100%;
+        }
+    }
 
     // .main-about__item--reverse
 
@@ -59,6 +107,20 @@
 
         color: #1E212C;
 
+        @media(max-width: $breakpoint992) {
+            font-size: 28px;
+            line-height: 120%;
+        }
+
+        @media(max-width: $breakpoint768) {
+            font-size: 26px;
+            line-height: 110%;
+        }
+
+        @media(max-width: $breakpoint480) {
+            font-size: 24px;
+            line-height: 90%;
+        }
     }
 
     // .about-item__text
@@ -75,6 +137,23 @@
         /* gray/700 */
 
         color: #787A80;
+
+        @media(max-width: $breakpoint992) {
+            font-size: 14px;
+            line-height: 140%;
+        }
+
+        @media(max-width: $breakpoint768) {
+            font-size: 12px;
+            line-height: 120%;
+            padding-top: 18px;
+            padding-bottom: 23px;
+        }
+
+        @media(max-width: $breakpoint480) {
+            font-size: 10px;
+            line-height: 90%;
+        }
     }
 
     // .about-item__btn
@@ -96,6 +175,11 @@
         border: 1px solid #FF5A30;
         border-radius: 4px;
         color: #FF5A30;
+    }
+
+    @media(max-width: $breakpoint992) {
+        font-size: 12px;
+        line-height: 34px;
     }
 }
 
@@ -155,6 +239,11 @@
 
                 color: #1E212C;
                 margin-left: 10px;
+
+                @media(max-width: $breakpoint992) {
+                    font-size: 18px;
+                    line-height: 120%;
+                }
 
             }
 
