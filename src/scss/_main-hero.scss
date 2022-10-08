@@ -10,6 +10,7 @@
 
         @media(max-width: $breakpoint768) {
             padding-bottom: 110px;
+            background: none;
             padding-top: 40px;
         }
 
@@ -171,6 +172,8 @@
         @media(max-width: $breakpoint992) {
             font-size: 15px;
             line-height: 120%;
+            opacity: 1;
+            color: #000;
         }
 
         @media(max-width: $breakpoint768) {
@@ -189,6 +192,19 @@
         justify-content: center;
         transition: .3s ease;
 
+        @media(max-width: $breakpoint992) {
+            flex-wrap: wrap;
+
+        }
+
+        @media(max-width: $breakpoint768) {
+            transform: translateY(150px);
+        }
+
+        @media(max-width: $breakpoint480) {
+            transform: translateY(70px);
+        }
+
         &--item {
             opacity: 1;
             height: 159px;
@@ -204,6 +220,9 @@
             border-radius: 4px;
             width: 230px;
 
+            @media(max-width: $breakpoint480) {
+                width: 200px;
+            }
 
         }
 
@@ -228,6 +247,12 @@
 
             color: #9A9CA5;
 
+            @media(max-width: $breakpoint480) {
+                font-size: 14px;
+                line-height: 130%;
+                padding-top: 12px;
+                padding-bottom: 15px;
+            }
 
         }
 

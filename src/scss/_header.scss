@@ -33,7 +33,7 @@ nav {}
         z-index: 1111;
 
         @media(max-width: $breakpoint1200) {
-            margin-left: 23px;
+            margin-left: 5px;
         }
 
         &:hover {
@@ -167,6 +167,9 @@ nav {}
     // .menu__link
     .menu__item-link {
         color: white;
+        &:hover{
+            color: $gray;
+        }
     }
 }
 

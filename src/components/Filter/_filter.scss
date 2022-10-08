@@ -24,8 +24,16 @@
     justify-content: center;
     align-items: center;
 
+    @media(max-width: $breakpoint992) {
+        flex-wrap: wrap;
+    }
+
     &__row {
         display: flex;
+
+        @media(max-width: $breakpoint992) {
+            flex-wrap: wrap;
+        }
     }
 
     &__item {
@@ -34,6 +42,7 @@
         margin: 10px;
         border: 1px solid gray;
         border-radius: 5px;
+
 
         span {
             background: rgb(15, 1, 1);
