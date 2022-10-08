@@ -1,130 +1,123 @@
-.hero-img {
-    background-image: url(../img/hero.jpg);
-    background-repeat: no-repeat;
-    // .hero__img
-    background-size: cover;
-    background-position: center;
-    height: 998px;
-}
-
-.section {
-
-    // .section__hero
-
-    &__hero {}
-}
-
-.swiper-scrollbar {
-    position: relative;
-    display: flex;
-    gap: 5px;
-}
-
-.swiper {}
-
-.mySwiper {}
-
-.swiper-wrapper {
-}
-
-.swiper-slide {}
-
-.container {}
-
 .hero {
+    &__content {
+        max-width: 590px;
+    }
 
-    // .hero__title
-
-    &__title {}
-
-    // .hero__text
-
-    &__text {}
-}
-
-.buttons {}
-
-.btn {}
-
-.btn-outline {}
-
-.btn-primary {}
-
-.swiper-pagination {}
-
-.swiper-button-prev {}
-
-.swiper-button-next {}
-
-.swiper-scrollbar {}
+    &__next {
+        position: absolute;
+        right: 32px;
+        top: 50%;
+        z-index: 30;
+        background-color: #fff;
+        transform: translateY(-50%);
 
 
-.num {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 150%;
-    width: 178px;
-    background: none;
-    border-bottom: 2px solid #FFFFFF;
-    color: #FFFFFF;
-}
+    }
 
-.hero {
+    &__prev {
+        position: absolute;
+        left: 32px;
+        top: 50%;
+        z-index: 30;
+        background-color: #fff;
+        transform: translateY(-50%);
 
-    // .hero__title
 
-    &__title {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 72px;
-        line-height: 130%;
-        /* or 94px */
+    }
 
-        letter-spacing: 1px;
+    &__pag {
+        counter-reset: pag;
+        left: calc((100% - 1260px) / 2) !important;
+        bottom: 120px !important;
+        display: flex;
 
-        /* white */
+        .swiper-pagination-bullet {
+            display: flex;
+            flex-direction: column;
+            border-radius: 0;
+            width: 178px;
+            height: auto;
+            text-align: left;
+            background-color: transparent;
+            opacity: 1;
 
-        color: #FFFFFF;
+            &::before {
+                counter-increment: pag;
+                content: "0" counter(pag);
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 150%;
+                color: rgba(#fff, 0.3);
+                transition: color 0.3s ease-in-out;
+            }
 
-        span {
-            font-style: normal;
-            font-weight: 700;
-            font-size: 72px;
-            line-height: 130%;
-            /* or 94px */
+            &::after {
+                display: none;
+            }
 
-            letter-spacing: 1px;
+        }
 
-            /* primary */
 
-            color: #FF5A30;
+    }
+
+    &__bar {
+        position: relative;
+        overflow: hidden;
+        border-radius: 100px;
+        width: 100%;
+        height: 2px;
+        background-color: rgba(#fff, 0.3);
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            transform: scaleX(0);
+            transform-origin: left;
         }
     }
 
-    // .hero__text
-
-    &__text {
-        font-style: normal;
-        max-width: 595px;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 150%;
-        /* or 30px */
+    &__btns {
+        .btn {
+            &:not(:last-child) {
+                margin-right: 20px;
 
 
-        /* white */
-        padding-bottom: 61px;
-        padding-top: 24px;
-        color: #FFFFFF;
+            }
+        }
     }
 }
 
-.buttons {
-    display: flex;
-    gap: 24px;
+.swiper-pagination-bullet-active {
+    &::before {
+        color:#fff!important;
+    }
+
+    .hero__bar {
+        &::after {
+            transform: scaleX(1);
+            transition: transform var(--hero-slider-speed) ease-in-out;
+        }
+    }
 }
 
-.btn {}
+.hero-slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
 
+.hero-slide {
+    padding-top: 220px;
+    padding-bottom: 354px;
+    background-image: url("../img/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: $gray;
 
+}

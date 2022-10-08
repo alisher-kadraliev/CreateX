@@ -169,6 +169,16 @@
 
         color: #1E212C;
         padding-bottom: 60px;
+
+        @media(max-width: $breakpoint992) {
+            font-size: 36px;
+            line-height: 110%;
+        }
+
+        @media(max-width: $breakpoint768) {
+            font-size: 26px;
+            line-height: 90%;
+        }
     }
 
     // .clients__profile
@@ -188,6 +198,11 @@
         /* gray/800 */
 
         color: #424551;
+
+        @media(max-width: $breakpoint992) {
+            font-size: 14px;
+            line-height: 140%;
+        }
     }
 
     // .clients__pos
@@ -211,6 +226,13 @@
         transform: translateY(40px);
         margin-top: -40px;
         border-radius: 4px;
+
+        @media(max-width: $breakpoint992) {
+            width: 300px;
+        }
+        @media(max-width: $breakpoint768) {
+        display: none;
+        }
     }
 }
 
