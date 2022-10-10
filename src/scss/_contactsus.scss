@@ -34,7 +34,9 @@
     justify-content: space-between;
     // .contacts__left
     padding-top: 60px;
-
+@media(max-width: $breakpoint992) {
+flex-wrap: wrap;justify-content: center;
+}
     &__left {}
 
     // .contacts__right
