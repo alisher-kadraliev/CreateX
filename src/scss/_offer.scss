@@ -15,8 +15,18 @@
 
     &__items {
         display: flex;
-        gap: 240px;
+        gap: 180px;
         padding-top: 60px;
+
+        @media(max-width: $breakpoint992) {
+            gap: 100px;
+        }
+        @media(max-width: $breakpoint768) {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        }
     }
 
     // .offer__item
@@ -40,6 +50,12 @@
         /* gray/900 */
 
         color: #1E212C;
+
+        @media(max-width: $breakpoint992) {
+            font-size: 22px;
+            line-height: 120%;
+                padding-bottom: 16px;
+        }
     }
 
     // .offer__place
@@ -55,6 +71,11 @@
         /* gray/900 */
 
         color: #1E212C;
+
+        @media(max-width: $breakpoint992) {
+            font-size: 14px;
+            line-height: 120%;
+        }
     }
 
     // .offer__see
@@ -90,6 +111,11 @@
 
         color: #787A80;
 
+        @media(max-width: $breakpoint992) {
+            font-size: 14px;
+            line-height: 120%;
+        }
+
         span {
             font-style: normal;
             font-weight: 400;
@@ -101,6 +127,10 @@
             /* gray/900 */
 
             color: #1E212C;
+@media(max-width: $breakpoint992) {
+        font-size: 14px;
+        line-height: 120%;
+    }
         }
     }
 
@@ -144,6 +174,14 @@
         line-height: 130%;
         text-align: center;
         color: #1E212C;
+        @media(max-width: $breakpoint992) {
+            font-size: 42px;
+                line-height: 130%;
+        }
+        @media(max-width: $breakpoint768) {
+            font-size: 36px;
+                line-height: 100%;
+        }
     }
 
     // .offer-subitem__social

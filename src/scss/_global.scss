@@ -148,6 +148,9 @@ body {
     &__contacts {
         opacity: 1;
         width: 51%;
+        @media(max-width: $breakpoint992) {
+        opacity: 0;
+        }
     }
 
     &__portfolio {
