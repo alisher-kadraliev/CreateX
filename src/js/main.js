@@ -1,4 +1,5 @@
-// Custom scripts
+
+
 
 // Мобильное меню бургер
 function burgerMenu() {
@@ -47,7 +48,7 @@ function fixedNav() {
 window.addEventListener('scroll', fixedNav)
 
 
-//sad
+//swiper-1
 
 const historySlider = document.querySelector('.history-slider');
 
@@ -174,6 +175,62 @@ $(document).ready(function () {
 });
 
 
+
+
+//////////////////////////////////////////
+function getItems(className) {
+    items.forEach(item => {
+        if (item.classList.contains(className)) {
+            item.style.display = 'block'
+        } else {
+            item.style.display = 'none'
+        }
+    })
+}
+//////////////////////////////////////////
+
+
+
+//swiper
+const heroSliderSpeed = 1500;
+
+const bodyStyles = window.getComputedStyle(document.body);
+const fooBar = bodyStyles.getPropertyValue('--hero-slider-speed'); //get
+
+document.body.style.setProperty('--hero-slider-speed', heroSliderSpeed + 'ms');//set
+
+
+const swiperWap = new Swiper('.hero-slider', {
+    // Optional parameters
+    slidesPerView: 1,
+    // If we need pagination
+    pagination: {
+        el: '.hero__pag',
+        type: 'bullets',
+        clickable: true
+    },
+    speed: heroSliderSpeed,
+    autoplay: {
+        delay: 1000,
+    },
+
+    navigation: {
+        nextEl: '.hero__next',
+        prevEl: '.hero__prev',
+    },
+
+    on: {
+        init: function () {
+            const paginationBullets = document.querySelectorAll('.hero__pag .swiper-pagination-bullet');
+
+            paginationBullets.forEach(el => {
+                el.innerHTML = `<span class="hero__bar"></span>`;
+            });
+        },
+    },
+});
+
+
 //new filter
 const list = document.querySelector('.list'),
     items = document.querySelectorAll('.blocks__item')
@@ -213,40 +270,37 @@ function filter() {
     })
 }
 filter()
+// //////////////////////////////////////////
 
-function getItems(className) {
-    items.forEach(item => {
-        if (item.classList.contains(className)) {
-            item.style.display = 'block'
-        } else {
-            item.style.display = 'none'
-        }
-    })
-}
+//Modal
+// function bindModal(trigger, modal, close) {
+//     trigger = document.querySelector(trigger),
+//         modal = document.querySelector(modal),
+//         close = document.querySelector(close)
 
-//swiper
-const heroSlider = new Swiper('.hero-slider', {
-    slidesPerView: 1,
-    navigation: {
-        nextEl: '.hero__next',
-        prevEl: '.hero__prev',
-    },
-    speed: heroSliderSpeed,
-    autoplay: {
-        delay: 1000,
-    },
-    pagination: {
-        el: '.hero__pag',
-        type: 'bullets',
-        clickable: true
-    },
-    on: {
-        init: function () {
-            const paginationBullets = document.querySelectorAll('.hero__pag .swiper-pagination-bullet');
+//     const body = document.body
 
-            paginationBullets.forEach(el => {
-                el.innerHTML = `<span class="hero__bar"></span>`;
-            });
-        },
-    },
-});
+//     trigger.addEventListener('click', e => {
+//         e.preventDefault()
+//         modal.style.display = 'flex'
+//         body.classList.add('locked')
+//     });
+//     close.addEventListener('click', () => {
+//         modal.style.display = 'none'
+//         body.classList.remove('locked')
+//     });
+//     modal.addEventListener('click', e => {
+//         if (e.target === modal) {
+//             modal.style.display = 'none'
+//             body.classList.remove('locked')
+//         }
+//     })
+// }
+
+// // ПЕРВЫЙ аргумент - класс кнопки, при клике на которую будет открываться модальное окно.
+// // ВТОРОЙ аргумент - класс самого модального окна.
+// // ТРЕТИЙ аргумент - класс кнопки, при клике на которую будет закрываться модальное окно.
+// bindModal('.modal__btn', '.modal__wrapper', '.modal__close')
+// bindModal('.modal__btn-1', '.modal__wrapper-1', '.modal-1__close-1')
+
+

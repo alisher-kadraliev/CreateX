@@ -27,6 +27,21 @@
     /* gray/900 */
 
     color: #1E212C;
+
+    @media(max-width: $breakpoint992) {
+        font-size: 36px;
+        line-height: 120%;
+    }
+
+    @media(max-width: $breakpoint768) {
+        font-size: 26px;
+        line-height: 120%;
+    }
+
+    @media(max-width: $breakpoint480) {
+        font-size: 22px;
+        line-height: 110%;
+    }
 }
 
 .text {

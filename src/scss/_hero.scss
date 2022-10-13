@@ -94,13 +94,13 @@
 
 .swiper-pagination-bullet-active {
     &::before {
-        color:#fff!important;
+        color: #fff !important;
     }
 
     .hero__bar {
         &::after {
             transform: scaleX(1);
-            transition: transform var(--hero-slider-speed) ease-in-out;
+            transition: .3s ease-in-out;
         }
     }
 }
@@ -121,3 +121,78 @@
     background-color: $gray;
 
 }
+
+.swiper-slide {}
+
+.hero-slide {}
+
+.container {}
+
+.hero {
+
+    // .hero__content
+
+    &__content {}
+
+    // .hero__btns
+
+    &__btns {}
+}
+
+.main-title {}
+
+.main-title--home {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 130%;
+    /* or 94px */
+    padding-bottom: 24px;
+    letter-spacing: 1px;
+
+    /* white */
+
+    color: #FFFFFF;
+
+    span {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 130%;
+        /* or 94px */
+
+        letter-spacing: 1px;
+
+        /* primary */
+
+        color: #FF5A30;
+    }
+}
+
+.main-descr {}
+
+.main-descr--home {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    /* or 30px */
+
+    max-width: 595px;
+    /* white */
+
+    color: #FFFFFF;
+    padding-bottom: 61px;
+}
+
+.btn-reset {}
+
+.btn {}
+
+.btn--stroke {}
+
+.btn--stroke-light {}
+
+.btn--fill {}
