@@ -4,6 +4,9 @@
 
     &__info {
         padding: 120px 0;
+        @media(max-width: $breakpoint992) {
+        padding: 60px 0;
+        }
     }
 }
 
@@ -15,10 +18,20 @@
     display: flex;
     gap: 86px;
 
+    &--about {
+        @media(max-width: $breakpoint992) {
+
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            
+        }
+    }
+
     // .info__list
 
     &__list {
-  
+
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -40,7 +53,7 @@
         text-align: center;
 
         /* primary */
-padding-top: 20px;
+        padding-top: 20px;
         color: #FF5A30;
     }
 
@@ -56,7 +69,7 @@ padding-top: 20px;
         text-align: center;
 
         /* gray/900 */
-padding-top: 8px;
+        padding-top: 8px;
         color: #1E212C;
         text-align: center;
     }

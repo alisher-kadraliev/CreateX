@@ -9,6 +9,20 @@
         background-position: 1037px 1px;
 
         padding-bottom: 120px;
+
+        @media(max-width: $breakpoint992) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        @media(max-width: $breakpoint768) {
+            padding-bottom: 700px;
+
+        }
+
+        @media(max-width: $breakpoint480) {
+            padding-bottom: 900px;
+        }
     }
 }
 
@@ -19,6 +33,10 @@
     // .quos__item
     position: relative;
 
+    @media(max-width: $breakpoint768) {
+        flex-wrap: wrap;
+    }
+
     &__item {}
 
     // .quos__item--left
@@ -27,7 +45,13 @@
 
     // .quos__img
 
-    &__img {}
+    &__img {
+        @media(max-width: $breakpoint992) {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+        }
+    }
 
     // .quos__item--right
 
@@ -41,18 +65,39 @@
 
         box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
         border-radius: 4px;
+
+        @media(max-width: $breakpoint992) {
+            left: 393px;
+        }
+
+        @media(max-width: $breakpoint768) {
+            top: 500px;
+            left: 0px;
+        }
     }
 
     // .quos__bracer
     &__content {
         position: relative;
         padding: 80px 105px 71px 107px;
+
+        @media(max-width: $breakpoint992) {
+            padding: 80px 10px 71px 107px;
+        }
+
+        @media(max-width: $breakpoint480) {
+            padding: 10px 10px 71px 107px;
+        }
     }
 
     &__bracer {
         position: absolute;
         left: 57px;
         top: 80px;
+
+        @media(max-width: $breakpoint480) {
+            top: 12px;
+        }
     }
 
     // .quos__info
@@ -74,6 +119,12 @@
 
         &:not(:last-child) {
             padding-bottom: 20px;
+
+        }
+
+        @media(max-width: $breakpoint768) {
+            font-size: 16px;
+            line-height: 130%;
         }
     }
 
@@ -113,5 +164,9 @@
         position: absolute;
         bottom: 71px;
         right: 105px;
+
+        @media(max-width: $breakpoint992) {
+            bottom: 5px;
+        }
     }
 }

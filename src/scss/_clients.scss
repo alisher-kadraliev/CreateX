@@ -9,6 +9,14 @@
         &--4 {
             background: #fff;
             padding-top: 180px;
+
+            @media(max-width: $breakpoint992) {
+                padding-top: 80px;
+            }
+
+            @media(max-width: $breakpoint768) {
+                padding-top: 40px;
+            }
         }
     }
 }
@@ -76,6 +84,8 @@
         @media(max-width: $breakpoint768) {
             padding-bottom: 100px;
             padding-top: 40px;
+            align-items: center;
+            justify-content: center;
             gap: 30px;
 
         }
@@ -230,8 +240,9 @@
         @media(max-width: $breakpoint992) {
             width: 300px;
         }
+
         @media(max-width: $breakpoint768) {
-        display: none;
+            display: none;
         }
     }
 }
