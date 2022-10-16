@@ -10,8 +10,16 @@
         z-index: 30;
         background-color: #fff;
         transform: translateY(-50%);
+        border-radius: 50%;
+        padding: 14px 15px;
 
+        @media(max-width: $breakpoint992) {
+            top: 70%;
+        }
 
+        @media(max-width: $breakpoint768) {
+            top: 75%;
+        }
     }
 
     &__prev {
@@ -21,15 +29,39 @@
         z-index: 30;
         background-color: #fff;
         transform: translateY(-50%);
+        background: #FFFFFF;
+        opacity: 0.5;
+        border-radius: 50%;
+        padding: 14px 15px;
 
+        @media(max-width: $breakpoint992) {
+            top: 70%;
+        }
 
+        @media(max-width: $breakpoint768) {
+            top: 75%;
+        }
     }
 
     &__pag {
         counter-reset: pag;
-        left: calc((100% - 1260px) / 2) !important;
+        left: calc((100% - 960px) / 2) !important;
         bottom: 120px !important;
         display: flex;
+
+        @media(max-width: $breakpoint992) {
+            left: calc((100% - 761px)/ 2) !important;
+            bottom: 101px !important;
+        }
+
+        @media(max-width: $breakpoint768) {
+            left: calc((100% - 480px)/ 2) !important;
+            bottom: 60px !important;
+        }
+
+        @media(max-width: $breakpoint480) {
+            left: calc((100% - 330px)/ 2) !important;
+        }
 
         .swiper-pagination-bullet {
             display: flex;
@@ -49,11 +81,29 @@
                 line-height: 150%;
                 color: rgba(#fff, 0.3);
                 transition: color 0.3s ease-in-out;
+
+                @media(max-width: $breakpoint480) {
+                    font-size: 24px;
+                    line-height: 150%;
+                }
             }
 
             &::after {
                 display: none;
             }
+
+            @media(max-width: $breakpoint992) {
+                width: 148px;
+            }
+
+            @media(max-width: $breakpoint768) {
+                width: 118px;
+            }
+
+            @media(max-width: $breakpoint480) {
+                width: 80px;
+            }
+
 
         }
 
@@ -81,15 +131,7 @@
         }
     }
 
-    &__btns {
-        .btn {
-            &:not(:last-child) {
-                margin-right: 20px;
-
-
-            }
-        }
-    }
+    &__btns {}
 }
 
 .swiper-pagination-bullet-active {
@@ -120,6 +162,17 @@
     background-repeat: no-repeat;
     background-color: $gray;
 
+    @media(max-width: $breakpoint768) {
+        padding-top: 120px;
+        padding-bottom: 254px;
+
+    }
+
+    @media(max-width: $breakpoint480) {
+        padding-top: 60px;
+    }
+
+
 }
 
 .swiper-slide {}
@@ -136,7 +189,18 @@
 
     // .hero__btns
 
-    &__btns {}
+    &__btns {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        @media(max-width: $breakpoint768) {
+            flex-wrap: wrap;
+
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
 
 .main-title {}
@@ -154,6 +218,16 @@
     /* white */
 
     color: #FFFFFF;
+
+    @media(max-width: $breakpoint768) {
+        font-size: 52px;
+        line-height: 130%;
+    }
+
+    @media(max-width: $breakpoint480) {
+        font-size: 42px;
+        line-height: 130%;
+    }
 
     span {
         font-style: normal;
@@ -185,14 +259,56 @@
 
     color: #FFFFFF;
     padding-bottom: 61px;
+
+    @media(max-width: $breakpoint768) {
+        font-size: 18px;
+        line-height: 130%;
+        padding-bottom: 41px;
+    }
 }
 
 .btn-reset {}
 
 .btn {}
 
-.btn--stroke {}
+.btn--stroke {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 52px;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 0 40px;
+
+    @media(max-width: $breakpoint768) {
+        max-width: 100%;
+        text-align: center;
+        width: 100%;
+        font-size: 14px;
+    }
+}
 
 .btn--stroke-light {}
 
-.btn--fill {}
+.btn--fill {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 52px;
+    padding: 0 40px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    background: #FF5A30;
+    border-radius: 4px;
+    color: #FFFFFF;
+
+    @media(max-width: $breakpoint768) {
+        max-width: 100%;
+        text-align: center;
+        width: 100%;
+        font-size: 14px;
+    }
+}

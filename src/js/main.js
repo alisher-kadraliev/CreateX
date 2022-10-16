@@ -96,6 +96,34 @@ $(document).ready(function () {
     $(".slider").slick({
         slidesToShow: 3,
         slidesToScroll: 2,
+        responsive: [
+            {
+                breakpoint: 1184,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    centerMode: true,
+                    variableWidth: true
+                }
+            },
+
+            {
+                breakpoint: 805,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+
+            {
+                breakpoint: 649,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+
+        ]
     });
     $(".clients__swiper").slick({
         arrows: true,

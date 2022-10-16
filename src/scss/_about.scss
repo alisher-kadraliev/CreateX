@@ -5,6 +5,11 @@
     &__about {
         padding-top: 120px;
         padding-bottom: 180px;
+
+        @media(max-width: $breakpoint768) {
+            padding-top: 60px;
+            padding-bottom: 80px;
+        }
     }
 }
 
@@ -66,6 +71,11 @@
     &__video-scr {
         position: relative;
     }
+}
+
+.video-about {
+    max-width: 100%;
+    width: 100%;
 }
 
 .text {}

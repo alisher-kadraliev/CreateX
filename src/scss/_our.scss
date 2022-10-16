@@ -159,6 +159,9 @@
         display: flex;
         gap: 24px;
         justify-content: center;
+        @media(max-width: $breakpoint768) {
+        flex-wrap: wrap;
+        }
 
     }
 
@@ -202,7 +205,6 @@
     }
 
     &__input-1 {
-        padding-right: 300px;
     }
 }
 
