@@ -4,9 +4,9 @@
 
 
     &__stats {
-background-image: url(../img/bg-image.png);
-background-repeat: no-repeat;
-background-position:  left;
+        background-image: url(../img/bg-image.png);
+        background-repeat: no-repeat;
+        background-position: left;
     }
 }
 
@@ -14,7 +14,15 @@ background-position:  left;
 
 .stats {
     padding-bottom: 180px;
+
     // .stats__items
+    @media(max-width: $breakpoint768) {
+        padding-bottom: 120px;
+    }
+
+    @media(max-width: $breakpoint480) {
+        padding-bottom: 60px;
+    }
 
     &__items {}
 
@@ -22,6 +30,14 @@ background-position:  left;
 
     &__title {
         padding-top: 180px;
+
+        @media(max-width: $breakpoint768) {
+            padding-top: 120px;
+        }
+
+        @media(max-width: $breakpoint480) {
+            padding-top: 60px;
+        }
     }
 
     // .stats__list
@@ -32,6 +48,9 @@ background-position:  left;
         gap: 48px;
         justify-content: center;
 
+        @media(max-width: $breakpoint768) {
+            flex-wrap: wrap;
+        }
     }
 
     &__list-item {

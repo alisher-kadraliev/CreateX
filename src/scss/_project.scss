@@ -5,6 +5,9 @@
     &__project {
         padding: 120px 0;
         min-width: 0;
+        @media(max-width: $breakpoint768) {
+        padding: 60px 0;
+        }
     }
 }
 
@@ -17,6 +20,7 @@
     // .project__title
     &__item {
         min-width: 0;
+
     }
 
     &__explore {
@@ -26,6 +30,10 @@
         justify-content: center;
         margin-top: 80px;
         gap: 40px;
+        @media(max-width: $breakpoint768) {
+        flex-wrap: wrap;
+            gap: 20px;
+        }
     }
 
     &__title {
@@ -40,6 +48,16 @@
         /* gray/900 */
 
         color: #1E212C;
+
+        @media(max-width: $breakpoint992) {
+            font-size: 36px;
+            line-height: 110%;
+        }
+
+        @media(max-width: $breakpoint768) {
+            font-size: 30px;
+            line-height: 100%;
+        }
     }
 
     &__subtitle {
@@ -160,7 +178,6 @@
 .slider {
     position: relative;
     min-width: 0;
-
     &.slick-arrow.slick-disabled {
         opacity: 0.3;
     }
@@ -181,6 +198,8 @@
     height: 345px;
     width: 390px;
     border-radius: 4px 4px 0px 0px;
+    @media(max-width: $breakpoint992) {
+    }
 }
 
 
@@ -194,15 +213,18 @@
         font-size: 28px;
         line-height: 150%;
         /* identical to box height, or 42px */
-
         display: flex;
         align-items: center;
-
-        /* gray/900 */
-
         color: #1E212C;
+        @media(max-width: $breakpoint768) {
+        font-size: 24px;
+            line-height: 130%;
+        }
     }
 
     // .explore__btn
+    &__btn{
+padding: 0 40px;
+    }
 
 }
