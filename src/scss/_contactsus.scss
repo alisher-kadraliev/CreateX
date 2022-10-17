@@ -1,8 +1,13 @@
-.contacts {
-    padding-top: 120px;
-    padding-bottom: 120px;
+.section {
+    &__contacts {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
 
+.contacts {
     &__content {
+        padding-top: 40px;
         display: flex;
         justify-content: space-between;
 
@@ -26,24 +31,38 @@
     }
 }
 
+
+
 .form-contacts {
     width: 600px;
 
     &__line {
         display: flex;
-        justify-content: space-between;
         margin-bottom: 23px;
         width: 100%;
+        flex-wrap: wrap;
 
+        @media(max-width: $breakpoint768) {
+            flex-direction: column;
+        }
 
     }
 
     &__field {
         margin-bottom: 0;
-        width: 47.5%;
+        width: 50%;
+
+        @media(max-width: $breakpoint768) {
+            width: 50%;
+        }
+
+        @media(max-width: $breakpoint480) {
+            width: 100%;
+        }
 
         &--big {
             width: 100%;
+
         }
 
 
@@ -88,6 +107,10 @@
         padding: 0;
         padding-left: 3px;
         width: 47.5%;
+
+        @media(max-width: $breakpoint768) {
+            width: 100%;
+        }
 
         .form-field__caption {
             margin-bottom: 21px;
@@ -188,72 +211,18 @@
 }
 
 
-.section {
-
-    // .section__contacts
-
-    &__contacts {}
-}
-
-
-.contacts {
-
-    // .contacts__content
-
-    &__content {}
-
-    // .contacts__image
-
-    &__image {}
-}
-
-.form-contacts {
-
-    // .form-contacts__line
-
-    &__line {}
-
-    // .form-contacts__field
-
-    &__field {}
-
-    // .form-contacts__fields
-
-    &__fields {}
-
-    // .form-contacts__radio
-
-    &__radio {}
-
-    // .form-contacts__field--big
-
-    &__field--big {}
-
-    // .form-contacts__bottom
-
-    &__bottom {}
-
-    // .form-contacts__checkbox
-
-    &__checkbox {}
-
-    // .form-contacts__btn
-
-    &__btn {}
-}
 
 .dropdown__form {
     background: #F4F5F7;
     /* gray/400 */
-
+    margin-top: 16px;
     border: 1px solid #D7DADD;
     border-radius: 4px;
-    width: 50%;
-    padding: 13px 0 13px 16px;
+    width: 100%;
+    padding: 13px 80px 13px 16px;
 }
 
 .form-field {
-
     // .form-field__caption
 
     &__caption {
@@ -272,10 +241,14 @@
         color: #9a9ca5;
         background: #F4F5F7;
         /* gray/400 */
-
+        padding-right: 20px;
         border: 1px solid #D7DADD;
         border-radius: 4px;
         margin-top: 8px;
+
+        &--1 {
+            width: 80%;
+        }
 
         &::placeholder {
             padding: 13px 16px;
@@ -284,140 +257,23 @@
         }
     }
 
-    // .form-field__select
-
-    &__select {}
-
-    // .form-field__flex
-
-    &__flex {}
-
-    // .form-field__input--big
-
-    &__input--big {}
+    // .form-field__selec
 }
 
-.form-field--gray {}
+.contact-btn {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 38px;
+    /* identical to box height, or 325% */
 
-.custom-radio {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
 
-    // .custom-radio__input
+    /* white */
 
-    &__input {}
-
-    // .custom-radio__text
-
-    &__text {}
+    color: #FFFFFF;
 }
-
-.custom-checkbox {
-
-    // .custom-checkbox__input
-
-    &__input {}
-
-    // .custom-checkbox__text
-
-    &__text {}
-}
-
-
-// .first__label {
-//     gap: 30px;
-//     display: flex;
-// }
-
-
-// .contacts {
-//     display: flex;
-//     gap: 20px;
-//     justify-content: space-between;
-//     // .contacts__left
-//     padding-top: 60px;
-
-//     @media(max-width: $breakpoint992) {
-//         flex-wrap: wrap;
-//         justify-content: center;
-//     }
-
-//     &__left {}
-
-//     // .contacts__right
-
-//     &__right {}
-// }
-
-// .form {
-
-//     // .form__form
-
-//     &__form {}
-
-//     // .form__label
-
-//     &__label {}
-
-//     // .form__input
-
-//     &__input {}
-
-//     // .form__btn
-
-
-//     &__btn {}
-// }
-
-// .radio {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-
-// }
-
-// .form__send-1 {
-//     display: flex;
-//     gap: 75px;
-// }
-
-// .point {
-
-//     margin-right: 5px;
-// }
-
-// .prefered {
-//     display: flex;
-//     gap: 10px;
-//     flex-direction: column;
-//     margin-top: -15px;
-
-//     &__title {
-//         font-style: normal;
-//         font-weight: 400;
-//         font-size: 16px;
-//         line-height: 160%;
-//         /* identical to box height, or 26px */
-
-
-//         /* gray/800 */
-//         margin-top: -15px;
-//         color: #424551;
-//     }
-// }
-
-// .phone {
-//     font-style: normal;
-//     font-weight: 400;
-//     font-size: 16px;
-//     line-height: 160%;
-//     /* identical to box height, or 26px */
-
-
-//     /* gray/800 */
-
-//     color: #424551;
-//     padding-right: 10px;
-// }
-
-// .checkbox-form {}
-
-// .check-label {}

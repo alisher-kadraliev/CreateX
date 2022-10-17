@@ -5,8 +5,9 @@
     &__project {
         padding: 120px 0;
         min-width: 0;
+
         @media(max-width: $breakpoint768) {
-        padding: 60px 0;
+            padding: 60px 0;
         }
     }
 }
@@ -30,8 +31,9 @@
         justify-content: center;
         margin-top: 80px;
         gap: 40px;
+
         @media(max-width: $breakpoint768) {
-        flex-wrap: wrap;
+            flex-wrap: wrap;
             gap: 20px;
         }
     }
@@ -90,6 +92,8 @@
     }
 
     &__button-outline {
+        visibility: hidden;
+        opacity: 0;
         font-style: normal;
         font-weight: 700;
         font-size: 14px;
@@ -107,6 +111,16 @@
         padding: 0px 32px;
         margin: 0 auto;
         transition: .3s ease;
+
+        a {
+            color: $primary;
+
+            &:hover {
+                background: $primary;
+                color: #fff;
+                transition: .3s ease;
+            }
+        }
 
         &:hover {
             background: $primary;
@@ -178,6 +192,7 @@
 .slider {
     position: relative;
     min-width: 0;
+
     &.slick-arrow.slick-disabled {
         opacity: 0.3;
     }
@@ -189,8 +204,24 @@
         background: #FFFFFF;
         /* shadow/regular */
         min-width: 0;
-        box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
         border-radius: 4px;
+        transition: .3s ease;
+
+        &:hover {
+            .project__button-outline {
+                transition: .3s ease;
+                visibility: visible;
+                opacity: 1;
+            }
+
+            .image-100 {
+                height: 305px;
+                transition: .3s ease;
+                border: 1px solid #000000;
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                border-radius: 4px 4px 0px 0px;
+            }
+        }
     }
 }
 
@@ -198,8 +229,7 @@
     height: 345px;
     width: 390px;
     border-radius: 4px 4px 0px 0px;
-    @media(max-width: $breakpoint992) {
-    }
+
 }
 
 
@@ -216,15 +246,19 @@
         display: flex;
         align-items: center;
         color: #1E212C;
+
         @media(max-width: $breakpoint768) {
-        font-size: 24px;
+            font-size: 24px;
             line-height: 130%;
         }
     }
 
     // .explore__btn
-    &__btn{
-padding: 0 40px;
+    &__btn {
+        padding: 0 40px;
+a{
+        color: #fff
+}
     }
 
 }

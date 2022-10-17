@@ -282,12 +282,20 @@
     text-transform: uppercase;
     color: #FFFFFF;
     padding: 0 40px;
+    transition: .3s ease-in-out;
 
     @media(max-width: $breakpoint768) {
         max-width: 100%;
         text-align: center;
         width: 100%;
         font-size: 14px;
+    }
+
+    &:hover {
+        color: #424551;
+        background: #E5E8ED;
+        border-radius: 4px;
+        transition: .3s ease-in-out;
     }
 }
 
@@ -310,5 +318,10 @@
         text-align: center;
         width: 100%;
         font-size: 14px;
+    }
+
+    &:hover {
+        background-color: $primary-hover;
+        transition: .3s ease-in-out;
     }
 }

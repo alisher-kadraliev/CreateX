@@ -16,7 +16,7 @@
     gap: 30px;
 
     // .news__title
-    @media(max-width: $breakpoint992) {
+    @media(max-width: 1236px) {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
@@ -43,7 +43,7 @@
     // .news__img
 
     &__img {
-        @media(max-width: $breakpoint992) {
+        @media(max-width: 1236px) {
             max-width: 100%;
             width: 100%;
             height: auto;
