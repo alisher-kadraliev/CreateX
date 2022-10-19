@@ -198,7 +198,25 @@ $(document).ready(function () {
         asNavFor: '.slider-for',
         infinite: true,
         draggable: false,
-        focusOnSelect: true
+        focusOnSelect: true,
+        responsive: [
+
+            {
+                breakpoint: 720,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 390,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            }
+
+        ]
     });
 });
 

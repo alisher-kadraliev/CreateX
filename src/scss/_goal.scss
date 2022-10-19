@@ -2,7 +2,9 @@
 
     // .section__goal
 
-    &__goal {padding-bottom: 120px;}
+    &__goal {
+        padding-bottom: 120px;
+    }
 }
 
 .container {}
@@ -10,10 +12,28 @@
 .goal {
     display: flex;
     gap: 135px;
+
     // .goal__item
+    @media(max-width: 1214px) {
+        gap: 35px;
+    }
+
+    @media(max-width: $breakpoint992) {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
 
     &__item {
         max-width: 600px;
+
+        @media(max-width: 1138px) {
+            max-width: 400px;
+        }
+
+        @media(max-width: $breakpoint992) {
+            max-width: 100%;
+        }
     }
 
     // .goal__title
@@ -43,11 +63,17 @@
 
         box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
         border-radius: 4px;
+
+        @media(max-width: $breakpoint992) {
+        width:100%;
+        }
     }
 
     // .goal__list
 
-    &__list {padding: 40px;}
+    &__list {
+        padding: 40px;
+    }
 
     // .goal__items
 
@@ -55,6 +81,11 @@
         gap: 32px;
         display: flex;
         justify-content: space-between;
+        @media(max-width: $breakpoint480) {
+        gap: 10px;
+
+        }
+
     }
 
     // .goal__subtitle
@@ -66,8 +97,13 @@
         line-height: 160%;
         /* identical to box height, or 26px */
         color: #1E212C;
-        &:not(:last-child){
+
+        &:not(:last-child) {
             padding-bottom: 16px;
+        }
+        @media(max-width: $breakpoint480) {
+            font-size: 13px;
+                line-height: 130%;
         }
 
     }
@@ -85,10 +121,14 @@
         /* gray/700 */
 
         color: #787A80;
+                @media(max-width: $breakpoint480) {
+                        font-size: 13px;
+                        line-height: 130%;
+                    }
     }
 
     &__text {
-        
+
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -101,9 +141,10 @@
         /* gray/800 */
 
         color: #424551;
-    &:not(:last-child){
-        padding-bottom: 35px;
-    }
+
+        &:not(:last-child) {
+            padding-bottom: 35px;
+        }
     }
 
 }

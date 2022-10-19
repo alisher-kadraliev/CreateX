@@ -11,6 +11,10 @@
         &--SinglePost {
             background: #F4F5F7;
         }
+        @media(max-width: $breakpoint768) {
+        padding-bottom: 40px;
+        padding-top: 40px;
+        }
     }
 
 }
@@ -39,6 +43,11 @@
         color: #1E212C;
         padding-top: 40px;
         padding-bottom: 60px;
+        @media(max-width: $breakpoint992) {
+        padding-bottom: 30px;
+                font-size: 44px;
+                    line-height: 120%;
+        }
     }
 
     // .hero-work__item
@@ -50,7 +59,17 @@
 
     // .slider-for__item
 
-    &__item {}
+    &__item {
+        &--1{
+            width: 1230px;
+            height: 700px;
+            @media(max-width:1237px ) {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            }
+        }
+    }
 }
 
 .slider-nav {

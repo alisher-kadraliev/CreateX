@@ -82,6 +82,11 @@
         &--left {
             padding-top: 7px;
             padding-bottom: 8px;
+            
+        }
+        @media(max-width: $breakpoint480) {
+        flex-wrap: wrap;
+        gap: 10px;
         }
     }
 
