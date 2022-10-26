@@ -78,4 +78,18 @@
     width: 100%;
 }
 
-.text {}
+.video-block {
+
+    // .video-block__play
+
+    &__play {}
+}
+
+.about-section {
+
+    // .about-section__video
+
+    &__video {
+        width: 1000px;
+    }
+}

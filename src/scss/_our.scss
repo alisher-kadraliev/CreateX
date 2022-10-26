@@ -6,7 +6,10 @@
     }
 
     &__our {
-
+padding-top: 100px;
+@media(max-width: $breakpoint768) {
+padding-top: 50px;
+}
         &--gray {
             background: #F4F5F7;
             padding: 80px 0 10px 0;
